@@ -52,10 +52,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed top-0 z-50 h-17.5 w-full transition-all duration-300',
-        {
-          'bg-background shadow-md': isScrolled
-        },
+        'fixed top-0 z-50 h-17.5 w-full transition-all duration-300 bg-background shadow-md',
       )}
     >
       <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>

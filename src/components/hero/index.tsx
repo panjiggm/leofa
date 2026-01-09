@@ -2,12 +2,13 @@ import { ArrowUpRightIcon, CalendarDaysIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Input } from '@/components/ui/input'
 import { Card, CardContent } from '@/components/ui/card'
+import logoProject9 from '@/assets/images/logo-project-9.png'
+import logoShinjiru from '@/assets/images/logo-shinjiru.png'
 
 const blogdata = [
     {
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/ink/image-02.png',
+      img: logoProject9,
       date: 'January 20, 2026',
       blogTitle: 'Build with Empathy for Better User Outcomes',
       description: 'Understand user needs to create intuitive and lovable experiences.',
@@ -18,7 +19,7 @@ const blogdata = [
       categoryLink: '#'
     },
     {
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/ink/image-03.png',
+      img: logoShinjiru,
       date: 'May 20, 2025',
       blogTitle: 'Write Code That Scales with Your Product',
       description: 'Structure your projects for easier updates, faster growth, and bugs.',
@@ -32,7 +33,7 @@ const blogdata = [
 
 const HeroSection = () => {
   return (
-    <section className='bg-muted pt-16 pb-12 sm:pb-16 lg:pb-24'>
+    <section className='bg-muted pt-32 pb-12 sm:pb-16 lg:pb-24'>
       <div className='mx-auto flex h-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8'>
         {/* Hero Header */}
         <div className='flex max-w-4xl flex-col items-center gap-4 self-center text-center'>
@@ -47,13 +48,11 @@ const HeroSection = () => {
             frameworks.
           </p>
           <div className='z-10 flex items-center gap-3 p-2'>
-            <Input type='email' placeholder='Your email' required className='bg-background h-10 sm:w-70' />
             <Button
               size='lg'
-              className='relative w-fit overflow-hidden rounded-lg px-6 text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]'
-              asChild
+              className='p-6 relative w-fit overflow-hidden rounded-xl text-base before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.5)_50%,transparent_75%,transparent_100%)] before:bg-size-[250%_250%,100%_100%] before:bg-position-[200%_0,0_0] before:bg-no-repeat before:transition-[background-position_0s_ease] before:duration-1000 hover:before:bg-position-[-100%_0,0_0] has-[>svg]:px-6 dark:before:bg-[linear-gradient(45deg,transparent_25%,rgba(0,0,0,0.2)_50%,transparent_75%,transparent_100%)]'
             >
-              <a href='#'>Subscribe</a>
+              Contact Us
             </Button>
           </div>
         </div>
