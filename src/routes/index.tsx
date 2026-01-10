@@ -5,6 +5,7 @@ import AboutUs from "@/components/about-us";
 import MainProducts from "@/components/main-products";
 import CTA from "@/components/cta";
 import FAQ from "@/components/faq";
+import Footer from "@/components/footer";
 
 export const Route = createFileRoute("/")({ component: App });
 
@@ -21,6 +22,7 @@ return (
       <MainProducts />
       <CTA />
       <FAQ />
+      <Footer />
       </main>
     </div>
 );

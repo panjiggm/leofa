@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
 @import 'tailwindcss';
 
 @import 'tw-animate-css';
@@ -213,6 +215,24 @@ code {
     calc(var(--radius) + 12px);
   --radius-4xl:
     calc(var(--radius) + 16px);
+}
+
+a.link-animated {
+  position: relative;
+  text-decoration: none;
+  &:before {
+    border-block-end: 1px solid;
+    content: '';
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+  &:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 @layer base {
