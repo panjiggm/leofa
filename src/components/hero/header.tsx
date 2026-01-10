@@ -12,6 +12,7 @@ import { cn } from '@/lib/utils'
 
 import Logo from '../logo' 
 import { Link } from '@tanstack/react-router'
+import { useEffect, useState } from 'react'
 
 const navigationData: NavigationSection[] = [
   {
@@ -33,10 +34,28 @@ const navigationData: NavigationSection[] = [
 ]
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    handleScroll()
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <header
       className={cn(
-        'fixed top-0 z-50 h-17.5 w-full transition-all duration-300 bg-background shadow-md',
+        'fixed top-0 z-50 h-17.5 w-full transition-all duration-300',
+        {
+          'bg-background shadow-md': isScrolled
+        },
       )}
     >
       <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>

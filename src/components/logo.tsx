@@ -3,7 +3,7 @@ import logoLeofa from "../assets/images/logo-leofa.png";
 
 const Logo = () => {
   return (
-    <div>
+      <div>
       <img 
         src={logoLeofa} 
         alt="PT. LEOFA INTEGRITAS PERKASA" 
