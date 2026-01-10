@@ -7,6 +7,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import MenuDropdown from './menu-dropdown'
 import MenuNavigation from './menu-navigation'
 import type { NavigationSection } from './menu-navigation'
+import LanguageToggle from './language-toggle'
 
 import { cn } from '@/lib/utils'
 
@@ -68,7 +69,9 @@ const Header = () => {
         <MenuNavigation navigationData={navigationData} className='max-lg:hidden' />
 
         {/* Actions */}
-        <div className='flex gap-4'>
+        <div className='flex gap-2'>
+          <LanguageToggle />
+          
           <Button variant='outline' className='max-sm:hidden' asChild>
             <a href='#'>Get in Touch</a>
           </Button>

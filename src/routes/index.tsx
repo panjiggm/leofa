@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import HeroSection from "@/components/hero";
 import Header from "@/components/hero/header";
 import AboutUs from "@/components/about-us";
+import MainProducts from "@/components/main-products";
 
 export const Route = createFileRoute("/")({ component: App });
 
@@ -14,7 +15,8 @@ return (
       {/* Main Content */}
       <main>
         <HeroSection />
-        <AboutUs />
+      <AboutUs />
+      <MainProducts />
       </main>
     </div>
 );
