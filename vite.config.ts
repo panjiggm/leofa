@@ -22,9 +22,22 @@ const config = defineConfig({
           localized: [
             ["en", "/en/:path(.*)?"],
           ],
-        },
+        },                                 
       ],
     }),
+    // Custom plugin to remove sourceMappingURL comments from Paraglide files
+    {
+      name: 'remove-paraglide-sourcemaps',
+      transform(code, id) {
+        if (id.includes('/paraglide/') && id.endsWith('.js')) {
+          // Remove sourceMappingURL comments
+          return {
+            code: code.replace(/\/\/# sourceMappingURL=.*\.map\n?/g, ''),
+            map: null,
+          }
+        }
+      },
+    },
     devtools(),
     nitro(),
     // this is the plugin that enables path aliases
@@ -35,6 +48,35 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  customLogger: {
+    warn(msg, options) {
+      // Suppress source map warnings for Paraglide files
+      if (
+        msg.includes('Failed to load source map') &&
+        (msg.includes('paraglide') || msg.includes('.js.map'))
+      ) {
+        return
+      }
+      // Use default warn for other messages
+      console.warn(msg, options)
+    },
+    warnOnce() {},
+    error(msg, options) {
+      console.error(msg, options)
+    },
+    info() {},
+    clearScreen() {},
+    hasErrorLogged: () => false,
+    hasWarned: false,
+  },
+  server: {
+    fs: {
+      allow: ['..'],
+    },
+  },
+  optimizeDeps: {
+    exclude: ['@inlang/paraglide-js'],
+  },
 })
 
 export default config
