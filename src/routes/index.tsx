@@ -3,6 +3,8 @@ import HeroSection from "@/components/hero";
 import Header from "@/components/hero/header";
 import AboutUs from "@/components/about-us";
 import MainProducts from "@/components/main-products";
+import CTA from "@/components/cta";
+import FAQ from "@/components/faq";
 
 export const Route = createFileRoute("/")({ component: App });
 
@@ -17,6 +19,8 @@ return (
         <HeroSection />
       <AboutUs />
       <MainProducts />
+      <CTA />
+      <FAQ />
       </main>
     </div>
 );
