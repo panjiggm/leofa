@@ -1,0 +1,240 @@
+---
+alwaysApply: true
+---
+
+# LEOFA Company Profile Website - Development Rules
+
+## Company Overview
+
+**LEOFA** (PT. LEOFA INTEGRITAS PERKASA) adalah perusahaan berbagai jenis busa berkualitas tinggi sebagai bahan baku industri kasur, sofa, automotif detailing dan fashion dengan berbagai pilihan densitas yang dapat disesuaikan.
+
+**Primary Color:** `#1E4C7A` (Navy Blue)
+
+## Tech Stack
+
+### Core Framework
+
+- **TanStack Start** with SSR (Server-Side Rendering) - Primary rendering strategy
+- **TanStack Router** - File-based routing system
+- **Nitro** - Server engine for SSR and static generation
+- **React 19** - UI library
+
+### UI & Styling
+
+- **Shadcn UI** - Component library (install new components with `bun dlx shadcn@latest add [component-name]`)
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Icon library
+- **Figtree Variable** - Primary font family
+
+### Internationalization
+
+- **Paraglide JS** (@inlang/paraglide-js) - i18n solution
+- **Supported Languages:** Indonesian (ID), English (EN), Chinese (ZH)
+- **Locale Strategy:** URL-based routing (e.g., `/en/`, `/id/`, `/zh/`)
+- **Cookie:** `PARAGLIDE_LOCALE` for locale persistence
+
+### Development Tools
+
+- **Biome** - Linter and formatter
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Vitest** - Testing framework
+
+## Project Type & Requirements
+
+### Website Type
+
+This is a **Company Profile Website** - must be:
+
+- ✅ **Static Site** (pre-rendered)
+- ✅ **SEO Optimized** (critical requirement)
+- ✅ **SSR First** approach where possible
+- ✅ **Mobile-First** responsive design (70% traffic from mobile)
+
+### Performance Requirements
+
+- Loading time **under 3 seconds**
+- Google Core Web Vitals optimized
+- Fast Time to First Byte (TTFB)
+- Optimized images and assets
+
+## SEO Optimization Guidelines
+
+### Must Implement
+
+1. **Meta Tags**
+   - Unique `<title>` for each page
+   - `<meta name="description">` with relevant keywords
+   - Open Graph tags for social sharing
+   - Twitter Card tags
+   - Canonical URLs for each page
+
+2. **Structured Data (Schema.org)**
+   - Organization schema (required - Leofa is a holding company)
+   - Breadcrumb schema
+   - LocalBusiness schema (if applicable)
+   - Article schema for blog/content pages
+
+3. **Technical SEO**
+   - Proper heading hierarchy (H1 → H2 → H3)
+   - Semantic HTML5 elements
+   - Alt text for all images
+   - XML sitemap generation
+   - robots.txt configuration
+   - Proper URL structure (clean, descriptive)
+
+4. **Internationalization SEO**
+   - `hreflang` tags for each language version
+   - Proper lang attribute on HTML tag
+   - Localized content (not just translated)
+
+### Implementation in TanStack Start
+
+- Use `head()` function in route files for page-specific meta tags
+- Leverage SSR for fully rendered HTML with meta tags
+- Use `getLocale()` from Paraglide for language-specific SEO
+
+## SSR & Static Generation Strategy
+
+### SSR First Approach
+
+- All pages should use SSR by default via TanStack Start
+- Ensure server-side data fetching where needed
+- Pre-render static pages at build time
+
+### Static Site Generation
+
+- Company profile pages should be statically generated
+- Use `generateStaticParams` or similar for static routes
+- Pre-build all routes for optimal performance
+
+### Data Fetching
+
+- Use `@tanstack/react-router-ssr-query` for SSR data fetching
+- Prefetch data on the server when possible
+- Cache static content appropriately
+
+## Code Organization
+
+### File Structure
+
+```
+src/
+├── routes/           # TanStack Router file-based routes
+├── components/       # React components
+│   ├── ui/          # Shadcn UI components
+│   └── hero/        # Feature-specific components
+├── assets/          # Static assets (images, fonts)
+├── lib/             # Utility functions
+├── paraglide/       # Generated i18n files (DO NOT EDIT)
+└── styles.css       # Global styles
+```
+
+### Component Guidelines
+
+- Use TypeScript for all components
+- Prefer functional components with hooks
+- Extract reusable logic to custom hooks
+- Keep components focused and single-purpose
+- Use Shadcn UI components as base, customize as needed
+
+## Styling Guidelines
+
+### Tailwind CSS Best Practices
+
+- Use utility classes first
+- Extract repeated patterns to components
+- Use CSS variables for theme colors (defined in `styles.css`)
+- Follow mobile-first approach (`sm:`, `md:`, `lg:` breakpoints)
+
+### Color System
+
+- Primary: `#1E4C7A` (Navy Blue - defined in CSS variables)
+- Use CSS custom properties from `styles.css` for theming
+- Support dark mode (use `dark:` variant when needed)
+
+### Shadcn Components
+
+- Install new components: `bun dlx shadcn@latest add [component]`
+- Customize components by editing files in `src/components/ui/`
+- Maintain consistency with existing component patterns
+
+## Internationalization (i18n)
+
+### Using Paraglide
+
+- Import messages: `import * as m from '@/paraglide/messages'`
+- Use `m.example_message()` for translations
+- Access locale: `import { getLocale } from '@/paraglide/runtime'`
+- URLs are automatically localized via router rewrite
+
+### Translation Files
+
+- Located in `messages/` directory (ID, EN, ZH)
+- Managed via Inlang project configuration
+- Use `machine-translate` script if needed: `bun machine-translate`
+
+### Best Practices
+
+- Always provide translations for all user-facing text
+- Use semantic message keys (not generic like "text1")
+- Test all language variants
+- Ensure proper RTL support if needed
+
+## Code Quality
+
+### Linting & Formatting
+
+- Use Biome for linting and formatting
+- Run `bun check` before committing
+- Follow existing code style patterns
+
+### TypeScript
+
+- Enable strict mode
+- Avoid `any` types
+- Use proper types for all props and functions
+- Leverage TanStack Router types for route params
+
+## Asset Management
+
+### Images
+
+- Optimize all images before adding
+- Use appropriate formats (WebP when possible)
+- Provide alt text for accessibility and SEO
+- Import images as modules: `import logo from '@/assets/images/logo.png'`
+
+### Fonts
+
+- Use `@fontsource-variable/figtree` (already configured)
+- Load fonts efficiently (avoid FOUT)
+
+## Build & Deployment
+
+### Build Commands
+
+- `bun dev` - Development server (port 3000)
+- `bun build` - Production build (static + SSR)
+- `bun preview` - Preview production build
+
+### Deployment Considerations
+
+- Ensure static assets are properly served
+- Configure server for SSR routes
+- Set up proper caching headers
+- Monitor Core Web Vitals
+
+## Notes for AI Assistants
+
+When working on this project:
+
+1. **Always prioritize SEO** - Every page needs proper meta tags and structured data
+2. **SSR First** - Prefer server-side rendering over client-side only
+3. **Mobile-First** - Design and code for mobile devices first
+4. **i18n** - Ensure all content is translatable via Paraglide
+5. **Performance** - Optimize for speed (target <3s load time)
+6. **Accessibility** - Use semantic HTML and ARIA attributes
+7. **Type Safety** - Leverage TypeScript fully
+8. **Component Reuse** - Prefer Shadcn components, customize when needed
