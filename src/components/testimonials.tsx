@@ -156,7 +156,7 @@ const Testimonials = () => {
                 <span className='relative z-1'>
                   Real People
                   <span
-                    className='from-primary absolute bottom-0 left-0 -z-1 h-0.5 w-full rounded-full bg-gradient-to-r to-transparent'
+                    className='from-primary absolute bottom-0 left-0 -z-1 h-0.5 w-full rounded-full bg-linear-to-r to-transparent'
                     aria-hidden='true'
                   />
                 </span>
