@@ -9,8 +9,7 @@
     "test": "vitest run",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check",
-    "machine-translate": "inlang machine translate --project project.inlang"
+    "check": "biome check"
   },
   "dependencies": {
     "@base-ui/react": "^1.0.0",
@@ -40,8 +39,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
-    "@inlang/cli": "^3.0.0",
-    "@inlang/paraglide-js": "2.7.2",
     "@tanstack/devtools-vite": "^0.3.11",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
