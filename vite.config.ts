@@ -5,10 +5,12 @@ import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
+import { intlayer, intlayerProxy } from "vite-intlayer";
 
 const config = defineConfig({
   plugins: [
     devtools(),
+    intlayerProxy(),
     nitro(),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
@@ -17,6 +19,7 @@ const config = defineConfig({
     tailwindcss(),
     tanstackStart(),
     viteReact(),
+    intlayer(),
   ],
   customLogger: {
     warn(msg, options) {

@@ -7,13 +7,13 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import MenuDropdown from './menu-dropdown'
 import MenuNavigation from './menu-navigation'
 import type { NavigationSection } from './menu-navigation'
-import LanguageToggle from './language-toggle'
 
 import { cn } from '@/lib/utils'
 
 import Logo from '../logo' 
 import { Link } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
+import { LocaleSwitcher } from '../locale-switcher'
 
 const navigationData: NavigationSection[] = [
   {
@@ -61,7 +61,7 @@ const Header = () => {
     >
       <div className='mx-auto flex h-full max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8'>
         {/* Logo */}
-        <Link to='/' className='flex items-center gap-3'>
+        <Link to='/{-$locale}' className='flex items-center gap-3'>
           <Logo />
         </Link>
 
@@ -70,7 +70,7 @@ const Header = () => {
 
         {/* Actions */}
         <div className='flex gap-2'>
-          <LanguageToggle />
+          <LocaleSwitcher />
           
           <Button variant='outline' className='max-sm:hidden' asChild>
             <a href='#'>Get in Touch</a>
