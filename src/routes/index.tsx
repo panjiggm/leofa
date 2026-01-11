@@ -1,29 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 import HeroSection from "@/components/hero";
-import Header from "@/components/hero/header";
 import AboutUs from "@/components/about-us";
 import MainProducts from "@/components/main-products";
 import CTA from "@/components/cta";
 import FAQ from "@/components/faq";
-import Footer from "@/components/footer";
 
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
 return (
   <div className='overflow-x-hidden'>
-      {/* Header Section */}
-      <Header />
-
-      {/* Main Content */}
-      <main>
-        <HeroSection />
+    <main>
+      <HeroSection />
       <AboutUs />
       <MainProducts />
       <CTA />
       <FAQ />
-      <Footer />
-      </main>
-    </div>
+    </main>
+  </div>
 );
 }

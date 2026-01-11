@@ -9,10 +9,22 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ShinjiruRouteImport } from './routes/shinjiru'
+import { Route as Project9RouteImport } from './routes/project9'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ShinjiruRoute = ShinjiruRouteImport.update({
+  id: '/shinjiru',
+  path: '/shinjiru',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Project9Route = Project9RouteImport.update({
+  id: '/project9',
+  path: '/project9',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -33,34 +45,56 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/project9': typeof Project9Route
+  '/shinjiru': typeof ShinjiruRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/project9': typeof Project9Route
+  '/shinjiru': typeof ShinjiruRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/project9': typeof Project9Route
+  '/shinjiru': typeof ShinjiruRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact'
+  fullPaths: '/' | '/about' | '/contact' | '/project9' | '/shinjiru'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact'
-  id: '__root__' | '/' | '/about' | '/contact'
+  to: '/' | '/about' | '/contact' | '/project9' | '/shinjiru'
+  id: '__root__' | '/' | '/about' | '/contact' | '/project9' | '/shinjiru'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  Project9Route: typeof Project9Route
+  ShinjiruRoute: typeof ShinjiruRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/shinjiru': {
+      id: '/shinjiru'
+      path: '/shinjiru'
+      fullPath: '/shinjiru'
+      preLoaderRoute: typeof ShinjiruRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/project9': {
+      id: '/project9'
+      path: '/project9'
+      fullPath: '/project9'
+      preLoaderRoute: typeof Project9RouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -89,6 +123,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  Project9Route: Project9Route,
+  ShinjiruRoute: ShinjiruRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -125,13 +125,13 @@ const MainProducts = () => {
 
             {/* Web Design */}
             <MotionPreset fade blur slide={{ offset: 50 }} delay={1.2} transition={{ duration: 0.6 }}>
-              <Card className='rounded-3xl shadow-none'>
+              <Card className='bg-warning rounded-3xl shadow-none'>
                 <CardHeader className='gap-3'>
-                  <CardTitle className='flex items-center gap-2.5 text-xl'>
+                  <CardTitle className='flex items-center gap-2.5 text-xl text-primary'>
                     <LaptopIcon className='size-5' />
                     <span>Web Design</span>
                   </CardTitle>
-                  <CardDescription className='text-lg'>
+                  <CardDescription className='text-lg text-primary'>
                     I craft modern, responsive web designs that tell your brand&apos;s story. Optimized for performance,
                     usability, and seamless navigation.
                   </CardDescription>
@@ -149,13 +149,13 @@ const MainProducts = () => {
               slide={{ direction: 'right', offset: 50 }}
               transition={{ duration: 0.6 }}
             >
-              <Card className='rounded-3xl shadow-none'>
+              <Card className='rounded-3xl shadow-none bg-primary'>
                 <CardHeader className='gap-3'>
-                  <CardTitle className='flex items-center gap-2.5 text-xl'>
+                  <CardTitle className='flex items-center gap-2.5 text-xl text-primary-foreground'>
                     <PenToolIcon className='size-5' />
                     <span>Logo Design</span>
                   </CardTitle>
-                  <CardDescription className='text-lg'>
+                  <CardDescription className='text-lg text-primary-foreground'>
                     Crafting distinctive, scalable, and impactful logos that embody your brand&apos;s identity and
                     vision.
                   </CardDescription>

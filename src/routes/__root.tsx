@@ -4,6 +4,8 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import { getLocale } from '../paraglide/runtime'
 
 import appCss from '../styles.css?url'
+import Header from '@/components/hero/header'
+import Footer from '@/components/footer'
 
 export const Route = createRootRoute({
   head: () => ({
@@ -37,7 +39,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+      <Header />
         {children}
+        <Footer />
         <TanStackDevtools
           config={{
             position: 'bottom-right',

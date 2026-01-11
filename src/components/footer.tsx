@@ -97,9 +97,6 @@ const Footer = () => {
           <a href='#' className='hover:text-foreground font-light underline transition-colors duration-300'>
             Privacy policy
           </a>
-          <a href='#' className='hover:text-foreground font-light underline transition-colors duration-300'>
-            Accessibility statement
-          </a>
         </div>
         </div>
       </div>
