@@ -7,6 +7,7 @@ import AboutUs from "@/components/about-us";
 import MainProducts from "@/components/main-products";
 import CTA from "@/components/cta";
 import FAQ from "@/components/faq";
+import Testimonials from "@/components/testimonials";
 
 export const Route = createFileRoute("/{-$locale}/")({
   component: App,
@@ -30,6 +31,7 @@ return (
       <AboutUs />
       <MainProducts />
       <CTA />
+      <Testimonials />
       <FAQ />
     </main>
   </div>
