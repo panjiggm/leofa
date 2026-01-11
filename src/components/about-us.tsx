@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Badge } from '@/components/ui/badge'
+import { MotionPreset } from '@/components/ui/motion-preset'
 
 const tabs = [
     {
@@ -47,13 +48,17 @@ const AboutUs = () => {
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
         {/* Header */}
         <div className='mb-6 space-y-4 text-center mx-auto max-w-4xl'>
-          <Badge className='text-sm font-normal' variant='outline'>
-            About Us
-          </Badge>
-          <p className='text-muted-foreground text-xl'>
-            Our journey highlights the strength of collaboration and determination. Together, we have tackled obstacles,
-            rejoiced in our successes, and crafted a tale of progress and achievement.
-          </p>
+          <MotionPreset fade blur slide={{ direction: 'down', offset: 30 }} transition={{ duration: 0.5 }}>
+            <Badge className='text-sm font-normal' variant='outline'>
+              About Us
+            </Badge>
+          </MotionPreset>
+          <MotionPreset fade blur slide={{ direction: 'down', offset: 30 }} delay={0.2} transition={{ duration: 0.5 }}>
+            <p className='text-muted-foreground text-xl'>
+              Our journey highlights the strength of collaboration and determination. Together, we have tackled obstacles,
+              rejoiced in our successes, and crafted a tale of progress and achievement.
+            </p>
+          </MotionPreset>
         </div>
 
         <Tabs defaultValue='our-mission' className='items-center gap-12 md:gap-16 lg:gap-24'>
@@ -72,19 +77,23 @@ const AboutUs = () => {
           {tabs.map(tab => (
             <TabsContent key={tab.value} value={tab.value}>
               <div className='grid grid-cols-1 items-center gap-16 lg:grid-cols-2'>
-                <img
-                  src={tab.content.image}
-                  alt={tab.name}
-                  className='h-full max-h-91 min-h-52 w-full rounded-lg object-cover'
-                />
+                <MotionPreset fade blur slide={{ direction: 'right', offset: 50 }} delay={0.1} transition={{ duration: 0.6 }}>
+                  <img
+                    src={tab.content.image}
+                    alt={tab.name}
+                    className='h-full max-h-91 min-h-52 w-full rounded-lg object-cover'
+                  />
+                </MotionPreset>
 
-                <div className='space-y-6'>
-                  <h3 className='text-xl font-semibold'>{tab.content.title}</h3>
-                  <p className='text-muted-foreground text-base'>{tab.content.description}</p>
-                  <Button size='lg' asChild>
-                    <a href={tab.content.buttonLink}>{tab.content.buttonText}</a>
-                  </Button>
-                </div>
+                <MotionPreset fade blur slide={{ direction: 'left', offset: 50 }} delay={0.2} transition={{ duration: 0.6 }}>
+                  <div className='space-y-6'>
+                    <h3 className='text-xl font-semibold'>{tab.content.title}</h3>
+                    <p className='text-muted-foreground text-base'>{tab.content.description}</p>
+                    <Button size='lg' asChild>
+                      <a href={tab.content.buttonLink}>{tab.content.buttonText}</a>
+                    </Button>
+                  </div>
+                </MotionPreset>
               </div>
             </TabsContent>
           ))}
