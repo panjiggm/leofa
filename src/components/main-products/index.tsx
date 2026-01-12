@@ -59,7 +59,9 @@ const uiImages = [
     'Sleep Products',
     'Furniture Solutions',
     'Fashion Materials',
-    'Research & Development'
+    'Compounds',
+    'Microfiber Pads',
+    'Wool Pads'
   ]
 
 const MainProducts = () => {
