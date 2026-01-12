@@ -1,106 +1,121 @@
-import { GithubIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
+import { useLocation, useParams } from '@tanstack/react-router'
+import { getIntlayer } from 'intlayer'
 
 import logoLeofaWhite from '@/assets/images/logo-leofa-white.png'
+import { Link, LinkComponentProps } from '@tanstack/react-router';
+
+const getLocaleFromUrl = (pathname: string, params: any): string => {
+  const validLocales = ['en', 'id', 'zh'];
+  
+  // Extract from pathname first - get first segment (most reliable for root route)
+  const pathSegments = pathname.split("/").filter(Boolean);
+  const firstSegment = pathSegments[0]?.toLowerCase();
+  
+  // Check if first segment is a valid locale
+  if (firstSegment && validLocales.includes(firstSegment)) {
+    return firstSegment;
+  }
+  
+  // Fallback to route params if available
+  const paramLocale = params?.locale?.toLowerCase();
+  if (paramLocale && validLocales.includes(paramLocale)) {
+    return paramLocale;
+  }
+  
+  // Default to 'en' (default locale from config)
+  return 'en';
+};
 
 const Footer = () => {
+  const { pathname } = useLocation();
+  const params = useParams({ strict: false });
+  
+  // Calculate locale from URL - will recalculate on every render when pathname changes
+  const locale = getLocaleFromUrl(pathname, params);
+  
+  // Get content from server-side intlayer - will get fresh content for current locale
+  const content = getIntlayer("home-page", locale);
+  
   return (
     <footer className='bg-primary border-t border-primary/20'>
       <div className='relative mx-auto max-w-7xl overflow-hidden px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between gap-8 py-8 max-lg:flex-col sm:py-16 lg:py-24 lg:max-xl:gap-10'>
           <div className='flex max-w-95.5 flex-col gap-8 max-lg:gap-6'>
-            <a href='#' className='flex items-center gap-3'>
+            <Link to='/{-$locale}' className='flex items-center gap-3'>
               <img 
                 src={logoLeofaWhite} 
                 alt="PT. LEOFA INTEGRITAS PERKASA" 
                 className="h-auto w-auto max-h-16 object-contain"
               />
-            </a>
+            </Link>
 
             <div className='flex flex-col gap-8 max-lg:gap-4'>
-              <div>
-                <p className='text-lg font-medium text-white'>Subscribe to newsletter</p>
-                <p className='text-white/70'>
-                  Have questions or need assistance? Get in touch with our team for personalised support.
-                </p>
-              </div>
-
-              <div className='flex items-center gap-4'>
-                <a href='#' target='#'>
-                  <GithubIcon className='text-white/70 hover:text-white size-5 transition-colors' />
-                </a>
-                <a href='#' target='#'>
-                  <InstagramIcon className='size-5 text-white/70 hover:text-white transition-colors' />
-                </a>
-                <a href='#' target='#'>
-                  <TwitterIcon className='size-5 text-white/70 hover:text-white transition-colors' />
-                </a>
-                <a href='#' target='#'>
-                  <YoutubeIcon className='text-white/70 hover:text-white size-5 transition-colors' />
-                </a>
+              <div className='space-y-4'>
+                <div className='flex items-start gap-3'>
+                  <Phone className='text-white/70 size-5 mt-0.5 shrink-0' />
+                  <a href='tel:+6282128551500' className='text-white/70 hover:text-white transition-colors'>
+                    +62821-2855-1500
+                  </a>
+                </div>
+                <div className='flex items-start gap-3'>
+                  <Mail className='text-white/70 size-5 mt-0.5 shrink-0' />
+                  <a href='mailto:office@leofaintegritas.co.id' className='text-white/70 hover:text-white transition-colors'>
+                    office@leofaintegritas.co.id
+                  </a>
+                </div>
+                <div className='flex items-start gap-3'>
+                  <MapPin className='text-white/70 size-5 mt-0.5 shrink-0' />
+                  <p className='text-white/70'>
+                    Jl. Rimpak Wetan, Kel. Sindangasih, Kec. Sindang Jaya, Kab. Tangerang, Provinsi Banten
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div className='grid gap-8 sm:grid-cols-2 lg:max-xl:gap-6 xl:min-w-172'>
             <div className='flex flex-col gap-8'>
-              <span className='text-white/70 pl-18 max-lg:pl-18 md:text-lg lg:text-xl'>Useful links</span>
+              <span className='text-white/70 pl-18 max-lg:pl-18 md:text-lg lg:text-xl'>{content.footer.usefulLinks.title}</span>
               <ul className='space-y-8'>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>01</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    Career
-                  </a>
-                </li>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>02</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    Help
-                  </a>
-                </li>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>03</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    Works
-                  </a>
-                </li>
+                {content.footer.usefulLinks.items.map((item, index) => (
+                  <li key={index} className='flex items-center gap-11 lg:max-xl:gap-7'>
+                    <span className='text-white/70 w-7 md:text-lg lg:text-xl'>{String(index + 1).padStart(2, '0')}</span>
+                    <Link to={`/{-$locale}${String(item.href)}` as LinkComponentProps["to"]} className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             <div className='flex flex-col gap-8'>
-              <span className='text-white/70 pl-18 max-lg:pl-18 md:text-lg lg:text-xl'>Pages</span>
+              <span className='text-white/70 pl-18 max-lg:pl-18 md:text-lg lg:text-xl'>{content.footer.pages.title}</span>
               <ul className='space-y-8'>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>01</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    Features
-                  </a>
-                </li>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>02</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    Use cases
-                  </a>
-                </li>
-                <li className='flex items-center gap-11 lg:max-xl:gap-7'>
-                  <span className='text-white/70 w-7 md:text-lg lg:text-xl'>03</span>
-                  <a href='#' className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
-                    About us
-                  </a>
-                </li>
+                {content.footer.pages.items.map((item, index) => (
+                  <li key={index} className='flex items-center gap-11 lg:max-xl:gap-7'>
+                    <span className='text-white/70 w-7 md:text-lg lg:text-xl'>{String(index + 1).padStart(2, '0')}</span>
+                    <Link to={`/{-$locale}${String(item.href)}` as LinkComponentProps["to"]} className='link-animated text-white text-2xl md:text-3xl lg:text-4xl hover:text-white/80'>
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
 
-              <div className='flex flex-col gap-4 py-6 md:flex-row md:justify-between md:items-center'>
-                  <span className='font-light text-white/70 text-sm md:text-base'>© Leofa {new Date().getFullYear()}. All rights reserved.</span>
+        <div className='flex flex-col gap-4 py-6 md:flex-row md:justify-between md:items-center'>
+            <span className='font-light text-white/70 text-sm md:text-base'>
+              {String(content.footer.copyright).replace(/\{year\}/g, String(new Date().getFullYear()))}
+            </span>
 
-                  <div className='text-white/70 flex flex-wrap items-center gap-4 md:gap-6 md:justify-end'>
-          <a href='#' className='hover:text-white font-light underline transition-colors duration-300 text-sm md:text-base'>
-            Terms & condition
-          </a>
-          <a href='#' className='hover:text-white font-light underline transition-colors duration-300 text-sm md:text-base'>
-            Privacy policy
-          </a>
+            <div className='text-white/70 flex flex-wrap items-center gap-4 md:gap-6 md:justify-end'>
+          <Link to='/{-$locale}/terms-conditions' className='hover:text-white font-light underline transition-colors duration-300 text-sm md:text-base'>
+            {content.footer.terms}
+          </Link>
+          <Link to='/{-$locale}/privacy-policy' className='hover:text-white font-light underline transition-colors duration-300 text-sm md:text-base'>
+            {content.footer.privacy}
+          </Link>
         </div>
         </div>
       </div>

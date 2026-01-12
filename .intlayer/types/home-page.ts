@@ -179,8 +179,43 @@ export default {
           ]
         },
         "footer": {
-          "title": "Contact Us",
-          "description": "We're here to help you with any questions or concerns you may have. Contact us today to get started."
+          "usefulLinks": {
+            "title": "Useful links",
+            "items": [
+              {
+                "label": "About Us",
+                "href": "/about"
+              },
+              {
+                "label": "Contact",
+                "href": "/contact"
+              },
+              {
+                "label": "Products",
+                "href": "/products"
+              }
+            ]
+          },
+          "pages": {
+            "title": "Pages",
+            "items": [
+              {
+                "label": "Project9",
+                "href": "/project9"
+              },
+              {
+                "label": "Shinjiru",
+                "href": "/shinjiru"
+              },
+              {
+                "label": "Home",
+                "href": "/"
+              }
+            ]
+          },
+          "copyright": "© Leofa {year}. All rights reserved.",
+          "terms": "Terms & condition",
+          "privacy": "Privacy policy"
         }
       },
       "id": {
@@ -358,8 +393,43 @@ export default {
           ]
         },
         "footer": {
-          "title": "Hubungi Kami",
-          "description": "Kami siap membantu Anda dengan pertanyaan atau kekhawatiran yang mungkin Anda miliki. Hubungi kami hari ini untuk memulai."
+          "usefulLinks": {
+            "title": "Tautan berguna",
+            "items": [
+              {
+                "label": "Tentang Kami",
+                "href": "/about"
+              },
+              {
+                "label": "Kontak",
+                "href": "/contact"
+              },
+              {
+                "label": "Produk",
+                "href": "/products"
+              }
+            ]
+          },
+          "pages": {
+            "title": "Halaman",
+            "items": [
+              {
+                "label": "Project9",
+                "href": "/project9"
+              },
+              {
+                "label": "Shinjiru",
+                "href": "/shinjiru"
+              },
+              {
+                "label": "Beranda",
+                "href": "/"
+              }
+            ]
+          },
+          "copyright": "© Leofa {year}. Hak cipta dilindungi.",
+          "terms": "Syarat & ketentuan",
+          "privacy": "Kebijakan privasi"
         }
       },
       "zh": {
@@ -537,8 +607,43 @@ export default {
           ]
         },
         "footer": {
-          "title": "联系我们",
-          "description": "我们随时准备帮助您解决任何问题或疑虑。今天联系我们，开始您的旅程。"
+          "usefulLinks": {
+            "title": "有用链接",
+            "items": [
+              {
+                "label": "关于我们",
+                "href": "/about"
+              },
+              {
+                "label": "联系我们",
+                "href": "/contact"
+              },
+              {
+                "label": "产品",
+                "href": "/products"
+              }
+            ]
+          },
+          "pages": {
+            "title": "页面",
+            "items": [
+              {
+                "label": "Project9",
+                "href": "/project9"
+              },
+              {
+                "label": "Shinjiru",
+                "href": "/shinjiru"
+              },
+              {
+                "label": "首页",
+                "href": "/"
+              }
+            ]
+          },
+          "copyright": "© Leofa {year}。保留所有权利。",
+          "terms": "条款和条件",
+          "privacy": "隐私政策"
         }
       }
     }

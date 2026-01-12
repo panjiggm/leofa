@@ -175,8 +175,43 @@
       ]
     },
     "footer": {
-      "title": "Contact Us",
-      "description": "We're here to help you with any questions or concerns you may have. Contact us today to get started."
+      "usefulLinks": {
+        "title": "Useful links",
+        "items": [
+          {
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          },
+          {
+            "label": "Products",
+            "href": "/products"
+          }
+        ]
+      },
+      "pages": {
+        "title": "Pages",
+        "items": [
+          {
+            "label": "Project9",
+            "href": "/project9"
+          },
+          {
+            "label": "Shinjiru",
+            "href": "/shinjiru"
+          },
+          {
+            "label": "Home",
+            "href": "/"
+          }
+        ]
+      },
+      "copyright": "© Leofa {year}. All rights reserved.",
+      "terms": "Terms & condition",
+      "privacy": "Privacy policy"
     }
   },
   "localIds": [

@@ -11,8 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as Char123LocaleChar125RouteRouteImport } from './routes/{-$locale}/route'
 import { Route as Char123LocaleChar125IndexRouteImport } from './routes/{-$locale}/index'
+import { Route as Char123LocaleChar125TermsConditionsRouteImport } from './routes/{-$locale}/terms-conditions'
 import { Route as Char123LocaleChar125ShinjiruRouteImport } from './routes/{-$locale}/shinjiru'
 import { Route as Char123LocaleChar125Project9RouteImport } from './routes/{-$locale}/project9'
+import { Route as Char123LocaleChar125PrivacyPolicyRouteImport } from './routes/{-$locale}/privacy-policy'
 import { Route as Char123LocaleChar125ContactRouteImport } from './routes/{-$locale}/contact'
 import { Route as Char123LocaleChar125AboutRouteImport } from './routes/{-$locale}/about'
 import { Route as Char123LocaleChar125404RouteImport } from './routes/{-$locale}/404'
@@ -30,6 +32,12 @@ const Char123LocaleChar125IndexRoute =
     path: '/',
     getParentRoute: () => Char123LocaleChar125RouteRoute,
   } as any)
+const Char123LocaleChar125TermsConditionsRoute =
+  Char123LocaleChar125TermsConditionsRouteImport.update({
+    id: '/terms-conditions',
+    path: '/terms-conditions',
+    getParentRoute: () => Char123LocaleChar125RouteRoute,
+  } as any)
 const Char123LocaleChar125ShinjiruRoute =
   Char123LocaleChar125ShinjiruRouteImport.update({
     id: '/shinjiru',
@@ -40,6 +48,12 @@ const Char123LocaleChar125Project9Route =
   Char123LocaleChar125Project9RouteImport.update({
     id: '/project9',
     path: '/project9',
+    getParentRoute: () => Char123LocaleChar125RouteRoute,
+  } as any)
+const Char123LocaleChar125PrivacyPolicyRoute =
+  Char123LocaleChar125PrivacyPolicyRouteImport.update({
+    id: '/privacy-policy',
+    path: '/privacy-policy',
     getParentRoute: () => Char123LocaleChar125RouteRoute,
   } as any)
 const Char123LocaleChar125ContactRoute =
@@ -72,8 +86,10 @@ export interface FileRoutesByFullPath {
   '/{-$locale}/404': typeof Char123LocaleChar125404Route
   '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
   '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/privacy-policy': typeof Char123LocaleChar125PrivacyPolicyRoute
   '/{-$locale}/project9': typeof Char123LocaleChar125Project9Route
   '/{-$locale}/shinjiru': typeof Char123LocaleChar125ShinjiruRoute
+  '/{-$locale}/terms-conditions': typeof Char123LocaleChar125TermsConditionsRoute
   '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
 }
 export interface FileRoutesByTo {
@@ -81,8 +97,10 @@ export interface FileRoutesByTo {
   '/{-$locale}/404': typeof Char123LocaleChar125404Route
   '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
   '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/privacy-policy': typeof Char123LocaleChar125PrivacyPolicyRoute
   '/{-$locale}/project9': typeof Char123LocaleChar125Project9Route
   '/{-$locale}/shinjiru': typeof Char123LocaleChar125ShinjiruRoute
+  '/{-$locale}/terms-conditions': typeof Char123LocaleChar125TermsConditionsRoute
   '/{-$locale}': typeof Char123LocaleChar125IndexRoute
 }
 export interface FileRoutesById {
@@ -92,8 +110,10 @@ export interface FileRoutesById {
   '/{-$locale}/404': typeof Char123LocaleChar125404Route
   '/{-$locale}/about': typeof Char123LocaleChar125AboutRoute
   '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/privacy-policy': typeof Char123LocaleChar125PrivacyPolicyRoute
   '/{-$locale}/project9': typeof Char123LocaleChar125Project9Route
   '/{-$locale}/shinjiru': typeof Char123LocaleChar125ShinjiruRoute
+  '/{-$locale}/terms-conditions': typeof Char123LocaleChar125TermsConditionsRoute
   '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
 }
 export interface FileRouteTypes {
@@ -104,8 +124,10 @@ export interface FileRouteTypes {
     | '/{-$locale}/404'
     | '/{-$locale}/about'
     | '/{-$locale}/contact'
+    | '/{-$locale}/privacy-policy'
     | '/{-$locale}/project9'
     | '/{-$locale}/shinjiru'
+    | '/{-$locale}/terms-conditions'
     | '/{-$locale}/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -113,8 +135,10 @@ export interface FileRouteTypes {
     | '/{-$locale}/404'
     | '/{-$locale}/about'
     | '/{-$locale}/contact'
+    | '/{-$locale}/privacy-policy'
     | '/{-$locale}/project9'
     | '/{-$locale}/shinjiru'
+    | '/{-$locale}/terms-conditions'
     | '/{-$locale}'
   id:
     | '__root__'
@@ -123,8 +147,10 @@ export interface FileRouteTypes {
     | '/{-$locale}/404'
     | '/{-$locale}/about'
     | '/{-$locale}/contact'
+    | '/{-$locale}/privacy-policy'
     | '/{-$locale}/project9'
     | '/{-$locale}/shinjiru'
+    | '/{-$locale}/terms-conditions'
     | '/{-$locale}/'
   fileRoutesById: FileRoutesById
 }
@@ -148,6 +174,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char123LocaleChar125IndexRouteImport
       parentRoute: typeof Char123LocaleChar125RouteRoute
     }
+    '/{-$locale}/terms-conditions': {
+      id: '/{-$locale}/terms-conditions'
+      path: '/terms-conditions'
+      fullPath: '/{-$locale}/terms-conditions'
+      preLoaderRoute: typeof Char123LocaleChar125TermsConditionsRouteImport
+      parentRoute: typeof Char123LocaleChar125RouteRoute
+    }
     '/{-$locale}/shinjiru': {
       id: '/{-$locale}/shinjiru'
       path: '/shinjiru'
@@ -160,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/project9'
       fullPath: '/{-$locale}/project9'
       preLoaderRoute: typeof Char123LocaleChar125Project9RouteImport
+      parentRoute: typeof Char123LocaleChar125RouteRoute
+    }
+    '/{-$locale}/privacy-policy': {
+      id: '/{-$locale}/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/{-$locale}/privacy-policy'
+      preLoaderRoute: typeof Char123LocaleChar125PrivacyPolicyRouteImport
       parentRoute: typeof Char123LocaleChar125RouteRoute
     }
     '/{-$locale}/contact': {
@@ -198,8 +238,10 @@ interface Char123LocaleChar125RouteRouteChildren {
   Char123LocaleChar125404Route: typeof Char123LocaleChar125404Route
   Char123LocaleChar125AboutRoute: typeof Char123LocaleChar125AboutRoute
   Char123LocaleChar125ContactRoute: typeof Char123LocaleChar125ContactRoute
+  Char123LocaleChar125PrivacyPolicyRoute: typeof Char123LocaleChar125PrivacyPolicyRoute
   Char123LocaleChar125Project9Route: typeof Char123LocaleChar125Project9Route
   Char123LocaleChar125ShinjiruRoute: typeof Char123LocaleChar125ShinjiruRoute
+  Char123LocaleChar125TermsConditionsRoute: typeof Char123LocaleChar125TermsConditionsRoute
   Char123LocaleChar125IndexRoute: typeof Char123LocaleChar125IndexRoute
 }
 
@@ -209,8 +251,12 @@ const Char123LocaleChar125RouteRouteChildren: Char123LocaleChar125RouteRouteChil
     Char123LocaleChar125404Route: Char123LocaleChar125404Route,
     Char123LocaleChar125AboutRoute: Char123LocaleChar125AboutRoute,
     Char123LocaleChar125ContactRoute: Char123LocaleChar125ContactRoute,
+    Char123LocaleChar125PrivacyPolicyRoute:
+      Char123LocaleChar125PrivacyPolicyRoute,
     Char123LocaleChar125Project9Route: Char123LocaleChar125Project9Route,
     Char123LocaleChar125ShinjiruRoute: Char123LocaleChar125ShinjiruRoute,
+    Char123LocaleChar125TermsConditionsRoute:
+      Char123LocaleChar125TermsConditionsRoute,
     Char123LocaleChar125IndexRoute: Char123LocaleChar125IndexRoute,
   }
 

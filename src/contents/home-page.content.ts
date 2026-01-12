@@ -613,15 +613,110 @@ const homePageContent = {
       ],
     },
     footer: {
-      title: t({
-        en: "Contact Us",
-        id: "Hubungi Kami",
-        zh: "联系我们",
+      usefulLinks: {
+        title: t({
+          en: "Useful links",
+          id: "Tautan berguna",
+          zh: "有用链接",
+        }),
+        items: [
+          {
+            label: t({
+              en: "About Us",
+              id: "Tentang Kami",
+              zh: "关于我们",
+            }),
+            href: t({
+              en: "/about",
+              id: "/about",
+              zh: "/about",
+            }),
+          },
+          {
+            label: t({
+              en: "Contact",
+              id: "Kontak",
+              zh: "联系我们",
+            }),
+            href: t({
+              en: "/contact",
+              id: "/contact",
+              zh: "/contact",
+            }),
+          },
+          {
+            label: t({
+              en: "Products",
+              id: "Produk",
+              zh: "产品",
+            }),
+            href: t({
+              en: "/products",
+              id: "/products",
+              zh: "/products",
+            }),
+          },
+        ],
+      },
+      pages: {
+        title: t({
+          en: "Pages",
+          id: "Halaman",
+          zh: "页面",
+        }),
+        items: [
+          {
+            label: t({
+              en: "Project9",
+              id: "Project9",
+              zh: "Project9",
+            }),
+            href: t({
+              en: "/project9",
+              id: "/project9",
+              zh: "/project9",
+            }),
+          },
+          {
+            label: t({
+              en: "Shinjiru",
+              id: "Shinjiru",
+              zh: "Shinjiru",
+            }),
+            href: t({
+              en: "/shinjiru",
+              id: "/shinjiru",
+              zh: "/shinjiru",
+            }),
+          },
+          {
+            label: t({
+              en: "Home",
+              id: "Beranda",
+              zh: "首页",
+            }),
+            href: t({
+              en: "/",
+              id: "/",
+              zh: "/",
+            }),
+          },
+        ],
+      },
+      copyright: t({
+        en: "© Leofa {year}. All rights reserved.",
+        id: "© Leofa {year}. Hak cipta dilindungi.",
+        zh: "© Leofa {year}。保留所有权利。",
       }),
-      description: t({
-        en: "We're here to help you with any questions or concerns you may have. Contact us today to get started.",
-        id: "Kami siap membantu Anda dengan pertanyaan atau kekhawatiran yang mungkin Anda miliki. Hubungi kami hari ini untuk memulai.",
-        zh: "我们随时准备帮助您解决任何问题或疑虑。今天联系我们，开始您的旅程。",
+      terms: t({
+        en: "Terms & condition",
+        id: "Syarat & ketentuan",
+        zh: "条款和条件",
+      }),
+      privacy: t({
+        en: "Privacy policy",
+        id: "Kebijakan privasi",
+        zh: "隐私政策",
       }),
     },
   },

@@ -175,8 +175,43 @@
       ]
     },
     "footer": {
-      "title": "Hubungi Kami",
-      "description": "Kami siap membantu Anda dengan pertanyaan atau kekhawatiran yang mungkin Anda miliki. Hubungi kami hari ini untuk memulai."
+      "usefulLinks": {
+        "title": "Tautan berguna",
+        "items": [
+          {
+            "label": "Tentang Kami",
+            "href": "/about"
+          },
+          {
+            "label": "Kontak",
+            "href": "/contact"
+          },
+          {
+            "label": "Produk",
+            "href": "/products"
+          }
+        ]
+      },
+      "pages": {
+        "title": "Halaman",
+        "items": [
+          {
+            "label": "Project9",
+            "href": "/project9"
+          },
+          {
+            "label": "Shinjiru",
+            "href": "/shinjiru"
+          },
+          {
+            "label": "Beranda",
+            "href": "/"
+          }
+        ]
+      },
+      "copyright": "© Leofa {year}. Hak cipta dilindungi.",
+      "terms": "Syarat & ketentuan",
+      "privacy": "Kebijakan privasi"
     }
   },
   "localIds": [

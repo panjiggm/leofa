@@ -175,8 +175,43 @@
       ]
     },
     "footer": {
-      "title": "联系我们",
-      "description": "我们随时准备帮助您解决任何问题或疑虑。今天联系我们，开始您的旅程。"
+      "usefulLinks": {
+        "title": "有用链接",
+        "items": [
+          {
+            "label": "关于我们",
+            "href": "/about"
+          },
+          {
+            "label": "联系我们",
+            "href": "/contact"
+          },
+          {
+            "label": "产品",
+            "href": "/products"
+          }
+        ]
+      },
+      "pages": {
+        "title": "页面",
+        "items": [
+          {
+            "label": "Project9",
+            "href": "/project9"
+          },
+          {
+            "label": "Shinjiru",
+            "href": "/shinjiru"
+          },
+          {
+            "label": "首页",
+            "href": "/"
+          }
+        ]
+      },
+      "copyright": "© Leofa {year}。保留所有权利。",
+      "terms": "条款和条件",
+      "privacy": "隐私政策"
     }
   },
   "localIds": [
