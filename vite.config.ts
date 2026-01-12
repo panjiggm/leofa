@@ -11,7 +11,12 @@ const config = defineConfig({
   plugins: [
     devtools(),
     intlayerProxy(),
-    nitro(),
+    nitro({
+      // Configure output for Vercel deployment
+      output: {
+        dir: process.env.VERCEL ? '.vercel/output' : '.output',
+      },
+    }),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
