@@ -1,4 +1,5 @@
-import { ArrowUpRightIcon, FramerIcon, LaptopIcon, MessageSquareMoreIcon, PaletteIcon, PenToolIcon } from 'lucide-react'
+import { ArrowUpRightIcon, Car, Bed, MessageSquareMoreIcon, Package, Sparkles } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 
 import BlurText from '@/components/ui/blur-text'
 import ImageStack from './image-stack'
@@ -11,6 +12,7 @@ import { Separator } from '@/components/ui/separator'
 import { MotionPreset } from '@/components/ui/motion-preset'
 import { Marquee } from '@/components/ui/marquee'
 import { CraftButton, CraftButtonIcon, CraftButtonLabel } from '@/components/ui/craft-button'
+import { useIntlayer } from 'react-intlayer'
 
 const uiImages = [
     {
@@ -49,33 +51,46 @@ const uiImages = [
   ]
   
   const skills = [
-    'Figma',
-    'UI Design',
-    'UX Design',
-    'Canva',
-    'Blender',
-    'Photoshop',
-    'Research',
-    'Graphics',
-    'Copywriting'
+    'Foam Manufacturing',
+    'Quality Control',
+    'Custom Density',
+    'Industrial Grade',
+    'Automotive Detailing',
+    'Sleep Products',
+    'Furniture Solutions',
+    'Fashion Materials',
+    'Research & Development'
   ]
 
 const MainProducts = () => {
+  const content = useIntlayer("home-page");
+  const headingRef = useRef<HTMLDivElement>(null)
+  const [headingText, setHeadingText] = useState('')
+
+  useEffect(() => {
+    if (headingRef.current) {
+      setHeadingText(headingRef.current.textContent || '')
+    }
+  }, [content.main_products.heading])
+
   return (
     <section className='py-8 sm:py-16'>
       <div className='mx-auto max-w-6xl space-y-8 px-4 sm:space-y-16 sm:px-6 lg:px-8'>
-        {/* Header */}
+        {/* Header - Leofa */}
         <div className='space-y-2.5'>
           <MotionPreset fade blur slide={{ direction: 'down', offset: 50 }} transition={{ duration: 0.5 }}>
             <Badge variant='outline' className='rounded-none'>
-              Services
+              {content.main_products.badge}
             </Badge>
           </MotionPreset>
           <div className='flex justify-between gap-4 max-md:flex-col'>
             <MotionPreset delay={0.3} transition={{ duration: 0.5 }} className='max-w-100'>
+              <div ref={headingRef} className='hidden'>
+                {content.main_products.heading}
+              </div>
               <h2 className='text-2xl font-semibold sm:text-3xl lg:text-4xl'>
                 <BlurText
-                  text='Design services that make an impact. 🎨'
+                  text={headingText}
                   delay={50}
                   animateBy='words'
                   direction='bottom'
@@ -90,8 +105,7 @@ const MainProducts = () => {
               transition={{ duration: 0.5 }}
             >
               <p className='text-muted-foreground max-w-xl text-lg'>
-                Whether you need a complete brand identity or a conversion-focused website, I create designs that
-                deliver. With a keen eye for detail, I ensure every element serves both form and function.
+                {content.main_products.description}
               </p>
             </MotionPreset>
           </div>
@@ -104,17 +118,16 @@ const MainProducts = () => {
         {/* Grid */}
         <div className='grid gap-6 sm:grid-cols-2'>
           <div className='flex flex-col gap-6'>
-            {/* UI/UX Design */}
+            {/* Project9 - Automotive Detailing */}
             <MotionPreset fade blur slide={{ offset: 50 }} delay={0.8} transition={{ duration: 0.6 }}>
               <Card className='bg-muted rounded-3xl border-0 shadow-none'>
                 <CardHeader className='gap-3'>
                   <CardTitle className='flex items-center gap-2.5 text-xl'>
-                    <PaletteIcon className='size-5' />
-                    <span>UI/UX Design</span>
+                    <Car className='size-5' />
+                    <span>{content.main_products.project9.name}</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    I craft intuitive UIs and seamless UXs that solve real problems and deliver results with a
-                    user-centric approach.
+                    {content.main_products.project9.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -123,17 +136,16 @@ const MainProducts = () => {
               </Card>
             </MotionPreset>
 
-            {/* Web Design */}
+            {/* Project9 - Industrial Grade */}
             <MotionPreset fade blur slide={{ offset: 50 }} delay={1.2} transition={{ duration: 0.6 }}>
               <Card className='bg-warning rounded-3xl shadow-none'>
                 <CardHeader className='gap-3'>
                   <CardTitle className='flex items-center gap-2.5 text-xl text-primary'>
-                    <LaptopIcon className='size-5' />
-                    <span>Web Design</span>
+                    <Sparkles className='size-5' />
+                    <span>{content.main_products.project9.qualityLabel}</span>
                   </CardTitle>
                   <CardDescription className='text-lg text-primary'>
-                    I craft modern, responsive web designs that tell your brand&apos;s story. Optimized for performance,
-                    usability, and seamless navigation.
+                    {content.main_products.project9.industrialGrade.description}
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -141,7 +153,7 @@ const MainProducts = () => {
           </div>
 
           <div className='flex flex-col gap-6'>
-            {/* Logo Design */}
+            {/* Shinjiru - Sleep Products */}
             <MotionPreset
               fade
               blur
@@ -152,18 +164,17 @@ const MainProducts = () => {
               <Card className='rounded-3xl shadow-none bg-primary'>
                 <CardHeader className='gap-3'>
                   <CardTitle className='flex items-center gap-2.5 text-xl text-primary-foreground'>
-                    <PenToolIcon className='size-5' />
-                    <span>Logo Design</span>
+                    <Bed className='size-5' />
+                    <span>{content.main_products.shinjiru.name}</span>
                   </CardTitle>
                   <CardDescription className='text-lg text-primary-foreground'>
-                    Crafting distinctive, scalable, and impactful logos that embody your brand&apos;s identity and
-                    vision.
+                    {content.main_products.shinjiru.description}
                   </CardDescription>
                 </CardHeader>
               </Card>
             </MotionPreset>
 
-            {/* Framer Design */}
+            {/* Shinjiru - Product Range */}
             <MotionPreset
               fade
               blur
@@ -175,12 +186,11 @@ const MainProducts = () => {
               <Card className='bg-muted h-full rounded-3xl border-0 shadow-none'>
                 <CardHeader className='gap-3'>
                   <CardTitle className='flex items-center gap-2.5 text-xl'>
-                    <FramerIcon className='size-5' />
-                    <span>Framer Design</span>
+                    <Package className='size-5' />
+                    <span>{content.main_products.shinjiru.productRange}</span>
                   </CardTitle>
                   <CardDescription className='text-lg'>
-                    I create high-quality designs using Framer that are interactive and engaging. Bringing ideas to life
-                    with smooth animations .
+                    {content.main_products.shinjiru.completeSleepSolutions.description}
                   </CardDescription>
                 </CardHeader>
                 <Marquee pauseOnHover duration={20} gap={1} className='flex-1 items-center py-0'>
@@ -238,8 +248,8 @@ const MainProducts = () => {
           transition={{ duration: 0.6 }}
         >
           <CraftButton asChild>
-            <a href='#'>
-              <CraftButtonLabel>Hire me</CraftButtonLabel>
+            <a href='/contact'>
+              <CraftButtonLabel>{content.main_products.actionButtons.contactUs}</CraftButtonLabel>
               <CraftButtonIcon>
                 <ArrowUpRightIcon className='size-3 stroke-2 transition-transform duration-500 group-hover:rotate-45' />
               </CraftButtonIcon>
@@ -247,8 +257,8 @@ const MainProducts = () => {
           </CraftButton>
           <Separator className='h-9!' orientation='vertical' />
           <Button variant='outline' className='rounded-full' asChild>
-            <a href='#'>
-              Let&apos; talk <MessageSquareMoreIcon className='size-4' />
+            <a href='/contact'>
+              {content.main_products.actionButtons.letsTalk} <MessageSquareMoreIcon className='size-4' />
             </a>
           </Button>
         </MotionPreset>

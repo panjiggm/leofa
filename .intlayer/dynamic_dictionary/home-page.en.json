@@ -56,6 +56,46 @@
         "qualityLabel": "Industrial Grade"
       }
     },
+    "main_products": {
+      "badge": "Our Products",
+      "heading": "Premium Quality Foam Solutions for Every Industry Need",
+      "description": "LEOFA provides high-quality foam materials with customizable density options for mattress, sofa, automotive detailing, and fashion industries. Experience superior comfort and durability with our innovative solutions.",
+      "project9": {
+        "name": "Project9",
+        "title": "Project9",
+        "description": "Professional automotive detailing solutions designed for precision and durability. Our products offer efficient and optimal polishing results for automotive and professional detailing needs.",
+        "qualityLabel": "Industrial Grade Quality",
+        "industrialGrade": {
+          "title": "Industrial Grade Quality",
+          "description": "Built to meet the highest standards for automotive detailing professionals. Precision-engineered foam materials that deliver consistent, superior results every time."
+        }
+      },
+      "shinjiru": {
+        "name": "Shinjiru",
+        "title": "Shinjiru",
+        "description": "Premium quality sleep solutions including mattresses, pillows, and more. Designed to meet the sleep comfort needs of Indonesian people with high quality standards.",
+        "productRange": "Complete Sleep Solutions",
+        "completeSleepSolutions": {
+          "title": "Complete Sleep Solutions",
+          "description": "A comprehensive line of sleep products crafted with premium foam materials. Experience superior comfort and support for the best night's sleep."
+        }
+      },
+      "skills": [
+        "Foam Manufacturing",
+        "Quality Control",
+        "Custom Density",
+        "Industrial Grade",
+        "Automotive Detailing",
+        "Sleep Products",
+        "Furniture Solutions",
+        "Fashion Materials",
+        "Research & Development"
+      ],
+      "actionButtons": {
+        "contactUs": "Contact Us",
+        "letsTalk": "Let's talk"
+      }
+    },
     "cta": {
       "title": "Ready to Get Started?",
       "description": "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",

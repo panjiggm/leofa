@@ -206,6 +206,150 @@ const homePageContent = {
         }),
       },
     },
+    main_products: {
+      badge: t({
+        en: "Our Products",
+        id: "Produk Kami",
+        zh: "我们的产品",
+      }),
+      heading: t({
+        en: "Premium Quality Foam Solutions for Every Industry Need",
+        id: "Solusi Busa Berkualitas Premium untuk Setiap Kebutuhan Industri",
+        zh: "满足每个行业需求的高品质泡沫解决方案",
+      }),
+      description: t({
+        en: "LEOFA provides high-quality foam materials with customizable density options for mattress, sofa, automotive detailing, and fashion industries. Experience superior comfort and durability with our innovative solutions.",
+        id: "LEOFA menyediakan bahan busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik dengan solusi inovatif kami.",
+        zh: "LEOFA提供高品质泡沫材料，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。通过我们的创新解决方案体验卓越的舒适性和耐用性。",
+      }),
+      project9: {
+        name: t({
+          en: "Project9",
+          id: "Project9",
+          zh: "Project9",
+        }),
+        title: t({
+          en: "Project9",
+          id: "Project9",
+          zh: "Project9",
+        }),
+        description: t({
+          en: "Professional automotive detailing solutions designed for precision and durability. Our products offer efficient and optimal polishing results for automotive and professional detailing needs.",
+          id: "Solusi detailing otomotif profesional yang dirancang untuk presisi dan ketahanan. Produk kami menawarkan hasil poles yang efisien dan optimal untuk kebutuhan detailing otomotif dan profesional.",
+          zh: "专为精确性和耐用性设计的专业汽车美容解决方案。我们的产品为汽车和专业美容需求提供高效和最佳的抛光效果。",
+        }),
+        qualityLabel: t({
+          en: "Industrial Grade Quality",
+          id: "Kualitas Standar Industri",
+          zh: "工业级质量",
+        }),
+        industrialGrade: {
+          title: t({
+            en: "Industrial Grade Quality",
+            id: "Kualitas Standar Industri",
+            zh: "工业级质量",
+          }),
+          description: t({
+            en: "Built to meet the highest standards for automotive detailing professionals. Precision-engineered foam materials that deliver consistent, superior results every time.",
+            id: "Dibangun untuk memenuhi standar tertinggi bagi profesional detailing otomotif. Bahan busa yang dirancang dengan presisi yang memberikan hasil yang konsisten dan superior setiap saat.",
+            zh: "专为满足汽车美容专业人士的最高标准而打造。精密设计的泡沫材料，每次都能提供一致、卓越的效果。",
+          }),
+        },
+      },
+      shinjiru: {
+        name: t({
+          en: "Shinjiru",
+          id: "Shinjiru",
+          zh: "Shinjiru",
+        }),
+        title: t({
+          en: "Shinjiru",
+          id: "Shinjiru",
+          zh: "Shinjiru",
+        }),
+        description: t({
+          en: "Premium quality sleep solutions including mattresses, pillows, and more. Designed to meet the sleep comfort needs of Indonesian people with high quality standards.",
+          id: "Solusi tidur berkualitas premium termasuk kasur, bantal, dan lainnya. Dirancang untuk memenuhi kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar kualitas tinggi.",
+          zh: "包括床垫、枕头等在内的优质睡眠解决方案。专为满足印尼人民的高质量标准睡眠舒适需求而设计。",
+        }),
+        productRange: t({
+          en: "Complete Sleep Solutions",
+          id: "Solusi Tidur Lengkap",
+          zh: "完整睡眠解决方案",
+        }),
+        completeSleepSolutions: {
+          title: t({
+            en: "Complete Sleep Solutions",
+            id: "Solusi Tidur Lengkap",
+            zh: "完整睡眠解决方案",
+          }),
+          description: t({
+            en: "A comprehensive line of sleep products crafted with premium foam materials. Experience superior comfort and support for the best night's sleep.",
+            id: "Lini produk tidur lengkap yang dibuat dengan bahan busa premium. Rasakan kenyamanan dan dukungan superior untuk tidur malam terbaik.",
+            zh: "采用优质泡沫材料制作的完整睡眠产品系列。体验卓越的舒适性和支撑，享受最佳夜间睡眠。",
+          }),
+        },
+      },
+      skills: [
+        t({
+          en: "Foam Manufacturing",
+          id: "Manufaktur Busa",
+          zh: "泡沫制造",
+        }),
+        t({
+          en: "Quality Control",
+          id: "Kontrol Kualitas",
+          zh: "质量控制",
+        }),
+        t({
+          en: "Custom Density",
+          id: "Densitas Kustom",
+          zh: "定制密度",
+        }),
+        t({
+          en: "Industrial Grade",
+          id: "Standar Industri",
+          zh: "工业级",
+        }),
+        t({
+          en: "Automotive Detailing",
+          id: "Detailing Otomotif",
+          zh: "汽车美容",
+        }),
+        t({
+          en: "Sleep Products",
+          id: "Produk Tidur",
+          zh: "睡眠产品",
+        }),
+        t({
+          en: "Furniture Solutions",
+          id: "Solusi Furniture",
+          zh: "家具解决方案",
+        }),
+        t({
+          en: "Fashion Materials",
+          id: "Bahan Fashion",
+          zh: "时尚材料",
+        }),
+        t({
+          en: "Research & Development",
+          id: "Penelitian & Pengembangan",
+          zh: "研发",
+        }),
+      ],
+      actionButtons: {
+        contactUs: t({
+          en: "Contact Us",
+          id: "Hubungi Kami",
+          zh: "联系我们",
+        }),
+        letsTalk: t({
+          en: "Let's talk",
+          id: "Mari berbicara",
+          zh: "让我们谈谈",
+        }),
+      },
+    },
     cta: {
       title: t({
         en: "Ready to Get Started?",

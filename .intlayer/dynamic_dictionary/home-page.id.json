@@ -56,6 +56,46 @@
         "qualityLabel": "Kelas Industri"
       }
     },
+    "main_products": {
+      "badge": "Produk Kami",
+      "heading": "Solusi Busa Berkualitas Premium untuk Setiap Kebutuhan Industri",
+      "description": "LEOFA menyediakan bahan busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik dengan solusi inovatif kami.",
+      "project9": {
+        "name": "Project9",
+        "title": "Project9",
+        "description": "Solusi detailing otomotif profesional yang dirancang untuk presisi dan ketahanan. Produk kami menawarkan hasil poles yang efisien dan optimal untuk kebutuhan detailing otomotif dan profesional.",
+        "qualityLabel": "Kualitas Standar Industri",
+        "industrialGrade": {
+          "title": "Kualitas Standar Industri",
+          "description": "Dibangun untuk memenuhi standar tertinggi bagi profesional detailing otomotif. Bahan busa yang dirancang dengan presisi yang memberikan hasil yang konsisten dan superior setiap saat."
+        }
+      },
+      "shinjiru": {
+        "name": "Shinjiru",
+        "title": "Shinjiru",
+        "description": "Solusi tidur berkualitas premium termasuk kasur, bantal, dan lainnya. Dirancang untuk memenuhi kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar kualitas tinggi.",
+        "productRange": "Solusi Tidur Lengkap",
+        "completeSleepSolutions": {
+          "title": "Solusi Tidur Lengkap",
+          "description": "Lini produk tidur lengkap yang dibuat dengan bahan busa premium. Rasakan kenyamanan dan dukungan superior untuk tidur malam terbaik."
+        }
+      },
+      "skills": [
+        "Manufaktur Busa",
+        "Kontrol Kualitas",
+        "Densitas Kustom",
+        "Standar Industri",
+        "Detailing Otomotif",
+        "Produk Tidur",
+        "Solusi Furniture",
+        "Bahan Fashion",
+        "Penelitian & Pengembangan"
+      ],
+      "actionButtons": {
+        "contactUs": "Hubungi Kami",
+        "letsTalk": "Mari berbicara"
+      }
+    },
     "cta": {
       "title": "Siap untuk Memulai?",
       "description": "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",

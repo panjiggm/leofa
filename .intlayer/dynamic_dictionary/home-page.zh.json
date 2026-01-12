@@ -56,6 +56,46 @@
         "qualityLabel": "工业级"
       }
     },
+    "main_products": {
+      "badge": "我们的产品",
+      "heading": "满足每个行业需求的高品质泡沫解决方案",
+      "description": "LEOFA提供高品质泡沫材料，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。通过我们的创新解决方案体验卓越的舒适性和耐用性。",
+      "project9": {
+        "name": "Project9",
+        "title": "Project9",
+        "description": "专为精确性和耐用性设计的专业汽车美容解决方案。我们的产品为汽车和专业美容需求提供高效和最佳的抛光效果。",
+        "qualityLabel": "工业级质量",
+        "industrialGrade": {
+          "title": "工业级质量",
+          "description": "专为满足汽车美容专业人士的最高标准而打造。精密设计的泡沫材料，每次都能提供一致、卓越的效果。"
+        }
+      },
+      "shinjiru": {
+        "name": "Shinjiru",
+        "title": "Shinjiru",
+        "description": "包括床垫、枕头等在内的优质睡眠解决方案。专为满足印尼人民的高质量标准睡眠舒适需求而设计。",
+        "productRange": "完整睡眠解决方案",
+        "completeSleepSolutions": {
+          "title": "完整睡眠解决方案",
+          "description": "采用优质泡沫材料制作的完整睡眠产品系列。体验卓越的舒适性和支撑，享受最佳夜间睡眠。"
+        }
+      },
+      "skills": [
+        "泡沫制造",
+        "质量控制",
+        "定制密度",
+        "工业级",
+        "汽车美容",
+        "睡眠产品",
+        "家具解决方案",
+        "时尚材料",
+        "研发"
+      ],
+      "actionButtons": {
+        "contactUs": "联系我们",
+        "letsTalk": "让我们谈谈"
+      }
+    },
     "cta": {
       "title": "准备开始了吗？",
       "description": "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
