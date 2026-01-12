@@ -144,6 +144,39 @@
           "content": "Bahan busa LEOFA untuk aplikasi fashion sangat bagus. Konsistensi kualitas dan pengiriman yang dapat diandalkan menjadikan mereka supplier terpercaya kami. Kemitraan yang hebat!"
         }
       ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "heading": "Masih ada pertanyaan?",
+      "description": "Temukan jawaban untuk pertanyaan umum tentang produk busa LEOFA, opsi kustomisasi, dan layanan. Pelajari lebih lanjut tentang solusi busa berkualitas tinggi kami untuk industri kasur, sofa, detailing automotif, dan fashion.",
+      "cantFindAnswers": "Tidak dapat menemukan jawaban?",
+      "contactUs": "Hubungi Kami",
+      "items": [
+        {
+          "question": "Apa itu LEOFA dan produk apa yang Anda tawarkan?",
+          "answer": "LEOFA (PT. LEOFA INTEGRITAS PERKASA) adalah produsen busa berkualitas tinggi yang terpercaya dengan opsi densitas yang dapat disesuaikan. Kami menyediakan solusi busa untuk industri kasur, sofa, detailing automotif, dan fashion. Produk kami termasuk bahan busa standar industri yang dirancang untuk memenuhi berbagai kebutuhan industri dengan kenyamanan dan ketahanan yang superior."
+        },
+        {
+          "question": "Apakah densitas busa dapat disesuaikan untuk kebutuhan spesifik?",
+          "answer": "Ya, tentu saja! Salah satu kekuatan utama kami adalah menawarkan opsi densitas yang dapat disesuaikan. Kami bekerja sama erat dengan klien untuk memahami kebutuhan spesifik mereka dan menyediakan bahan busa dengan densitas yang tepat sesuai dengan aplikasi mereka, baik untuk kasur, sofa, detailing automotif, atau produk fashion."
+        },
+        {
+          "question": "Industri apa saja yang dilayani LEOFA?",
+          "answer": "LEOFA melayani berbagai industri termasuk manufaktur kasur, produksi sofa dan furniture, detailing automotif (melalui sub-brand Project9 kami), dan aplikasi fashion. Dengan pengalaman lebih dari satu dekade, kami memiliki keahlian untuk menyediakan solusi busa yang disesuaikan untuk berbagai sektor industri."
+        },
+        {
+          "question": "Apa perbedaan antara Project9 dan Shinjiru?",
+          "answer": "Project9 adalah sub-brand kami yang fokus pada solusi detailing automotif profesional, menawarkan bahan busa yang dirancang dengan presisi untuk hasil poles yang efisien dan optimal. Shinjiru adalah lini produk tidur kami, menyediakan kasur, bantal, dan aksesori tidur berkualitas premium yang dirancang untuk memenuhi kebutuhan kenyamanan masyarakat Indonesia dengan standar kualitas tinggi."
+        },
+        {
+          "question": "Bagaimana cara memesan atau mendapatkan penawaran untuk produk LEOFA?",
+          "answer": "Anda dapat menghubungi kami melalui halaman kontak website kami, email, atau telepon. Tim kami siap membantu Anda menemukan solusi busa yang sempurna untuk kebutuhan industri Anda. Kami biasanya merespons dalam 2-4 jam pada hari kerja dan dapat memberikan penawaran khusus berdasarkan kebutuhan spesifik Anda, termasuk kustomisasi densitas dan kebutuhan volume."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Hubungi Kami",
+      "description": "Kami siap membantu Anda dengan pertanyaan atau kekhawatiran yang mungkin Anda miliki. Hubungi kami hari ini untuk memulai."
     }
   },
   "localIds": [

@@ -144,6 +144,39 @@
           "content": "LEOFA's foam materials for fashion applications are top-notch. The consistency in quality and reliable delivery make them our trusted supplier. Great partnership!"
         }
       ]
+    },
+    "faq": {
+      "badge": "FAQ",
+      "heading": "Have more questions?",
+      "description": "Find answers to common questions about LEOFA's foam products, customization options, and services. Learn more about our high-quality foam solutions for mattress, sofa, automotive detailing, and fashion industries.",
+      "cantFindAnswers": "Can't find answers?",
+      "contactUs": "Contact Us",
+      "items": [
+        {
+          "question": "What is LEOFA and what products do you offer?",
+          "answer": "LEOFA (PT. LEOFA INTEGRITAS PERKASA) is a trusted manufacturer of high-quality foam materials with customizable density options. We provide foam solutions for mattress, sofa, automotive detailing, and fashion industries. Our products include industrial-grade foam materials designed to meet various industry needs with superior comfort and durability."
+        },
+        {
+          "question": "Can foam density be customized for specific requirements?",
+          "answer": "Yes, absolutely! One of our key strengths is offering customizable density options. We work closely with our clients to understand their specific needs and provide foam materials with the exact density required for their applications, whether it's for mattresses, sofas, automotive detailing, or fashion products."
+        },
+        {
+          "question": "What industries does LEOFA serve?",
+          "answer": "LEOFA serves multiple industries including mattress manufacturing, sofa and furniture production, automotive detailing (through our Project9 sub-brand), and fashion applications. With over a decade of experience, we have the expertise to provide tailored foam solutions for various industrial sectors."
+        },
+        {
+          "question": "What is the difference between Project9 and Shinjiru?",
+          "answer": "Project9 is our sub-brand focused on professional automotive detailing solutions, offering precision-engineered foam materials for efficient and optimal polishing results. Shinjiru is our sleep products line, providing premium quality mattresses, pillows, and other sleep accessories designed to meet the comfort needs of Indonesian people with high quality standards."
+        },
+        {
+          "question": "How can I place an order or get a quote for LEOFA products?",
+          "answer": "You can contact us through our website's contact page, email, or phone. Our team is ready to help you find the perfect foam solutions for your industry needs. We typically respond within 2-4 hours during business days and can provide custom quotes based on your specific requirements, including density customization and volume needs."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Contact Us",
+      "description": "We're here to help you with any questions or concerns you may have. Contact us today to get started."
     }
   },
   "localIds": [

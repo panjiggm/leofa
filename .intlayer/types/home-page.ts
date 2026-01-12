@@ -148,6 +148,39 @@ export default {
               "content": "LEOFA's foam materials for fashion applications are top-notch. The consistency in quality and reliable delivery make them our trusted supplier. Great partnership!"
             }
           ]
+        },
+        "faq": {
+          "badge": "FAQ",
+          "heading": "Have more questions?",
+          "description": "Find answers to common questions about LEOFA's foam products, customization options, and services. Learn more about our high-quality foam solutions for mattress, sofa, automotive detailing, and fashion industries.",
+          "cantFindAnswers": "Can't find answers?",
+          "contactUs": "Contact Us",
+          "items": [
+            {
+              "question": "What is LEOFA and what products do you offer?",
+              "answer": "LEOFA (PT. LEOFA INTEGRITAS PERKASA) is a trusted manufacturer of high-quality foam materials with customizable density options. We provide foam solutions for mattress, sofa, automotive detailing, and fashion industries. Our products include industrial-grade foam materials designed to meet various industry needs with superior comfort and durability."
+            },
+            {
+              "question": "Can foam density be customized for specific requirements?",
+              "answer": "Yes, absolutely! One of our key strengths is offering customizable density options. We work closely with our clients to understand their specific needs and provide foam materials with the exact density required for their applications, whether it's for mattresses, sofas, automotive detailing, or fashion products."
+            },
+            {
+              "question": "What industries does LEOFA serve?",
+              "answer": "LEOFA serves multiple industries including mattress manufacturing, sofa and furniture production, automotive detailing (through our Project9 sub-brand), and fashion applications. With over a decade of experience, we have the expertise to provide tailored foam solutions for various industrial sectors."
+            },
+            {
+              "question": "What is the difference between Project9 and Shinjiru?",
+              "answer": "Project9 is our sub-brand focused on professional automotive detailing solutions, offering precision-engineered foam materials for efficient and optimal polishing results. Shinjiru is our sleep products line, providing premium quality mattresses, pillows, and other sleep accessories designed to meet the comfort needs of Indonesian people with high quality standards."
+            },
+            {
+              "question": "How can I place an order or get a quote for LEOFA products?",
+              "answer": "You can contact us through our website's contact page, email, or phone. Our team is ready to help you find the perfect foam solutions for your industry needs. We typically respond within 2-4 hours during business days and can provide custom quotes based on your specific requirements, including density customization and volume needs."
+            }
+          ]
+        },
+        "footer": {
+          "title": "Contact Us",
+          "description": "We're here to help you with any questions or concerns you may have. Contact us today to get started."
         }
       },
       "id": {
@@ -294,6 +327,39 @@ export default {
               "content": "Bahan busa LEOFA untuk aplikasi fashion sangat bagus. Konsistensi kualitas dan pengiriman yang dapat diandalkan menjadikan mereka supplier terpercaya kami. Kemitraan yang hebat!"
             }
           ]
+        },
+        "faq": {
+          "badge": "FAQ",
+          "heading": "Masih ada pertanyaan?",
+          "description": "Temukan jawaban untuk pertanyaan umum tentang produk busa LEOFA, opsi kustomisasi, dan layanan. Pelajari lebih lanjut tentang solusi busa berkualitas tinggi kami untuk industri kasur, sofa, detailing automotif, dan fashion.",
+          "cantFindAnswers": "Tidak dapat menemukan jawaban?",
+          "contactUs": "Hubungi Kami",
+          "items": [
+            {
+              "question": "Apa itu LEOFA dan produk apa yang Anda tawarkan?",
+              "answer": "LEOFA (PT. LEOFA INTEGRITAS PERKASA) adalah produsen busa berkualitas tinggi yang terpercaya dengan opsi densitas yang dapat disesuaikan. Kami menyediakan solusi busa untuk industri kasur, sofa, detailing automotif, dan fashion. Produk kami termasuk bahan busa standar industri yang dirancang untuk memenuhi berbagai kebutuhan industri dengan kenyamanan dan ketahanan yang superior."
+            },
+            {
+              "question": "Apakah densitas busa dapat disesuaikan untuk kebutuhan spesifik?",
+              "answer": "Ya, tentu saja! Salah satu kekuatan utama kami adalah menawarkan opsi densitas yang dapat disesuaikan. Kami bekerja sama erat dengan klien untuk memahami kebutuhan spesifik mereka dan menyediakan bahan busa dengan densitas yang tepat sesuai dengan aplikasi mereka, baik untuk kasur, sofa, detailing automotif, atau produk fashion."
+            },
+            {
+              "question": "Industri apa saja yang dilayani LEOFA?",
+              "answer": "LEOFA melayani berbagai industri termasuk manufaktur kasur, produksi sofa dan furniture, detailing automotif (melalui sub-brand Project9 kami), dan aplikasi fashion. Dengan pengalaman lebih dari satu dekade, kami memiliki keahlian untuk menyediakan solusi busa yang disesuaikan untuk berbagai sektor industri."
+            },
+            {
+              "question": "Apa perbedaan antara Project9 dan Shinjiru?",
+              "answer": "Project9 adalah sub-brand kami yang fokus pada solusi detailing automotif profesional, menawarkan bahan busa yang dirancang dengan presisi untuk hasil poles yang efisien dan optimal. Shinjiru adalah lini produk tidur kami, menyediakan kasur, bantal, dan aksesori tidur berkualitas premium yang dirancang untuk memenuhi kebutuhan kenyamanan masyarakat Indonesia dengan standar kualitas tinggi."
+            },
+            {
+              "question": "Bagaimana cara memesan atau mendapatkan penawaran untuk produk LEOFA?",
+              "answer": "Anda dapat menghubungi kami melalui halaman kontak website kami, email, atau telepon. Tim kami siap membantu Anda menemukan solusi busa yang sempurna untuk kebutuhan industri Anda. Kami biasanya merespons dalam 2-4 jam pada hari kerja dan dapat memberikan penawaran khusus berdasarkan kebutuhan spesifik Anda, termasuk kustomisasi densitas dan kebutuhan volume."
+            }
+          ]
+        },
+        "footer": {
+          "title": "Hubungi Kami",
+          "description": "Kami siap membantu Anda dengan pertanyaan atau kekhawatiran yang mungkin Anda miliki. Hubungi kami hari ini untuk memulai."
         }
       },
       "zh": {
@@ -440,6 +506,39 @@ export default {
               "content": "LEOFA用于时尚应用的泡沫材料是一流的。质量的一致性和可靠的交付使他们成为我们值得信赖的供应商。很棒的合作伙伴关系！"
             }
           ]
+        },
+        "faq": {
+          "badge": "FAQ",
+          "heading": "还有更多问题吗？",
+          "description": "查找有关LEOFA泡沫产品、定制选项和服务的常见问题解答。了解更多关于我们为床垫、沙发、汽车美容和时尚行业提供的高品质泡沫解决方案。",
+          "cantFindAnswers": "找不到答案吗？",
+          "contactUs": "联系我们",
+          "items": [
+            {
+              "question": "什么是LEOFA，您提供哪些产品？",
+              "answer": "LEOFA（PT. LEOFA INTEGRITAS PERKASA）是一家值得信赖的高品质泡沫材料制造商，提供可定制的密度选项。我们为床垫、沙发、汽车美容和时尚行业提供泡沫解决方案。我们的产品包括工业级泡沫材料，旨在满足各种行业需求，具有卓越的舒适性和耐用性。"
+            },
+            {
+              "question": "泡沫密度可以根据特定要求定制吗？",
+              "answer": "是的，绝对可以！我们的主要优势之一是提供可定制的密度选项。我们与客户密切合作，了解他们的具体需求，并提供具有所需精确密度的泡沫材料，无论是用于床垫、沙发、汽车美容还是时尚产品。"
+            },
+            {
+              "question": "LEOFA服务于哪些行业？",
+              "answer": "LEOFA服务于多个行业，包括床垫制造、沙发和家具生产、汽车美容（通过我们的Project9子品牌）以及时尚应用。凭借十多年的经验，我们拥有为各个工业部门提供定制泡沫解决方案的专业知识。"
+            },
+            {
+              "question": "Project9和Shinjiru有什么区别？",
+              "answer": "Project9是我们专注于专业汽车美容解决方案的子品牌，提供精密设计的泡沫材料，实现高效和最佳的抛光效果。Shinjiru是我们的睡眠产品系列，提供优质床垫、枕头和其他睡眠配件，旨在满足印尼人民的高质量标准舒适需求。"
+            },
+            {
+              "question": "如何订购或获取LEOFA产品的报价？",
+              "answer": "您可以通过我们网站的联系页面、电子邮件或电话联系我们。我们的团队随时准备帮助您找到适合您行业需求的完美泡沫解决方案。我们通常在工作日的2-4小时内回复，并可以根据您的具体要求提供定制报价，包括密度定制和数量需求。"
+            }
+          ]
+        },
+        "footer": {
+          "title": "联系我们",
+          "description": "我们随时准备帮助您解决任何问题或疑虑。今天联系我们，开始您的旅程。"
         }
       }
     }

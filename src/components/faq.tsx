@@ -7,40 +7,10 @@ import { Badge } from '@/components/ui/badge'
 import { PrimarySwipeButton } from '@/components/ui/swipe-button'
 import { Card, CardContent } from '@/components/ui/card'
 import { MotionPreset } from '@/components/ui/motion-preset'
-
-type FAQItem = {
-  question: string
-  answer: string
-}
-
-const faqItems: FAQItem[] = [
-    {
-      question: 'What is this app, and how can it help me?',
-      answer:
-        'This app helps you track your daily expenses, set budgets, and manage your finances more effectively. It provides you with the tools you need to understand your spending patterns.'
-    },
-    {
-      question: 'Is there a free trial available?',
-      answer:
-        'Yes, we offer a 14-day free trial that gives you full access to all premium features. No credit card required to start your trial, and you can cancel anytime during the trial period.'
-    },
-    {
-      question: 'Which payment methods do you accept?',
-      answer:
-        'We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. All payments are processed securely through our encrypted payment gateway.'
-    },
-    {
-      question: 'How does the app keep my financial data secure?',
-      answer:
-        'We use bank-level 256-bit SSL encryption to protect your data. Your financial information is stored on secure servers and we never share your personal data with third parties without your explicit consent.'
-    },
-    {
-      question: 'I need help with the app. How can I contact support?',
-      answer:
-        'You can reach our support team 24/7 through live chat, email at support@example.com, or by submitting a ticket through the app. We typically respond within 2-4 hours during business days.'
-    }
-  ]
+import { useIntlayer } from 'react-intlayer'
+  
 const FAQ = () => {
+  const content = useIntlayer("home-page");
   return (
     <section className='py-8 sm:py-16 lg:py-24'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -50,7 +20,7 @@ const FAQ = () => {
             <div className='mb-12 space-y-4 sm:mb-16 lg:mb-24'>
               <MotionPreset fade slide={{ direction: 'down', offset: 50 }} transition={{ duration: 0.7 }}>
                 <Badge className='border-primary px-3 py-1 text-sm [&>svg]:size-6' variant='outline'>
-                 FAQ
+                 {content.faq.badge}
                 </Badge>
               </MotionPreset>
               <MotionPreset
@@ -61,12 +31,11 @@ const FAQ = () => {
                 delay={0.2}
                 transition={{ duration: 0.7 }}
               >
-                Have more questions?
+                {content.faq.heading}
               </MotionPreset>
               <MotionPreset fade slide={{ direction: 'down', offset: 50 }} delay={0.4} transition={{ duration: 0.7 }}>
                 <p className='text-muted-foreground text-base leading-relaxed'>
-                  Our app is designed to make managing your finances easy and stress-free. With intuitive features, you
-                  can track your spending and savings effortlessly.
+                  {content.faq.description}
                 </p>
               </MotionPreset>
             </div>
@@ -74,16 +43,15 @@ const FAQ = () => {
               <Card>
                 <CardContent className='space-y-6'>
                   <div className='space-y-2.5'>
-                    <h3 className='text-xl font-medium md:text-2xl'>Can&apos;t find answers?</h3>
+                    <h3 className='text-xl font-medium md:text-2xl'>{content.faq.cantFindAnswers}</h3>
                     <p className='text-muted-foreground leading-relaxed'>
-                      We&apos;re here to help you out whenever you need! Get in touch with our dedicated support team
-                      for personalized assistance anytime.
+                      {content.faq.description}
                     </p>
                   </div>
 
                   <PrimarySwipeButton size='lg' asChild className='group has-[>svg]:px-6'>
                     <a href='#'>
-                      Contact us
+                      {content.faq.contactUs}
                       <ArrowRightIcon className='size-5 rotate-310 transition-transform duration-200' />
                     </a>
                   </PrimarySwipeButton>
@@ -95,7 +63,7 @@ const FAQ = () => {
           {/* Right Section - FAQ Accordion */}
           <MotionPreset fade slide={{ direction: 'down', offset: 50 }} delay={0.3} transition={{ duration: 0.7 }}>
             <Accordion type='single' collapsible className='space-y-5' defaultValue='item-0'>
-              {faqItems.map((item, index) => (
+              {content.faq.items.map((item, index) => (
                 <MotionPreset
                   key={index}
                   fade
