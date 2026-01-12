@@ -1,0 +1,22 @@
+{
+  "key": "home-page",
+  "content": {
+    "title": "Leofa | 创新与可靠的泡沫解决方案满足您的工业需求",
+    "description": "Leofa 是一家值得信赖的高品质泡沫材料制造商，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。体验卓越的舒适性和耐用性。",
+    "hero": {
+      "badge": "值得信赖的优质泡沫制造商",
+      "heading": "满足您行业需求的高品质泡沫解决方案",
+      "description": "LEOFA 提供高品质泡沫材料，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。体验卓越的舒适性和耐用性。",
+      "ctaButton": "联系我们"
+    },
+    "about_us": {},
+    "hot_products": {
+      "title": "我们的顶级产品",
+      "description": "看看我们的最佳销售产品。"
+    }
+  },
+  "localIds": [
+    "home-page::local::src/contents/home-page.content.ts"
+  ],
+  "locale": "zh"
+}

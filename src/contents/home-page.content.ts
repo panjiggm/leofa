@@ -34,7 +34,20 @@ const homePageContent = {
           id: "Hubungi Kami",
           zh: "联系我们",
         }),
-      }
+    },
+    about_us: {},
+    hot_products: {
+      title: t({
+        en: "Our Top Products",
+        id: "Produk Terbaik Kami",
+        zh: "我们的顶级产品",
+      }),
+      description: t({
+        en: "Take a look at the products that are our best sellers.",
+        id: "Lihat produk yang menjadi best seller kami.",
+        zh: "看看我们的最佳销售产品。",
+      }),
+    },
   },
 } satisfies Dictionary;
 

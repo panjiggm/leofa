@@ -1,0 +1,22 @@
+{
+  "key": "home-page",
+  "content": {
+    "title": "Leofa | Innovative and Reliable Foam Solutions for Your Industry Needs",
+    "description": "Leofa is a trusted manufacturer of high-quality foam materials with customizable density options for mattress, sofa, automotive detailing, and fashion industries. Experience superior comfort and durability.",
+    "hero": {
+      "badge": "Trusted Quality Foam Manufacturer",
+      "heading": "Premium Quality Foam Solutions for Your Industry Needs",
+      "description": "LEOFA provides high-quality foam materials with customizable density options for mattress, sofa, automotive detailing, and fashion industries. Experience superior comfort and durability.",
+      "ctaButton": "Contact Us"
+    },
+    "about_us": {},
+    "hot_products": {
+      "title": "Our Top Products",
+      "description": "Take a look at the products that are our best sellers."
+    }
+  },
+  "localIds": [
+    "home-page::local::src/contents/home-page.content.ts"
+  ],
+  "locale": "en"
+}

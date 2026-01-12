@@ -8,6 +8,7 @@ import MainProducts from "@/components/main-products";
 import CTA from "@/components/cta";
 import FAQ from "@/components/faq";
 import Testimonials from "@/components/testimonials";
+import HotProducts from "@/components/hot-products";
 
 export const Route = createFileRoute("/{-$locale}/")({
   component: App,
@@ -30,6 +31,7 @@ return (
       <HeroSection />
       <AboutUs />
       <MainProducts />
+      <HotProducts />
       <CTA />
       <Testimonials />
       <FAQ />

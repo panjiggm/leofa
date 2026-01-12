@@ -1,0 +1,22 @@
+{
+  "key": "home-page",
+  "content": {
+    "title": "Leofa | Solusi Inovatif dan Terpercaya untuk Kebutuhan Busa Industri Anda",
+    "description": "Leofa adalah produsen busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik.",
+    "hero": {
+      "badge": "Produsen Busa Berkualitas Terpercaya",
+      "heading": "Solusi Busa Berkualitas Premium untuk Kebutuhan Industri Anda",
+      "description": "LEOFA menyediakan bahan busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik.",
+      "ctaButton": "Hubungi Kami"
+    },
+    "about_us": {},
+    "hot_products": {
+      "title": "Produk Terbaik Kami",
+      "description": "Lihat produk yang menjadi best seller kami."
+    }
+  },
+  "localIds": [
+    "home-page::local::src/contents/home-page.content.ts"
+  ],
+  "locale": "id"
+}
