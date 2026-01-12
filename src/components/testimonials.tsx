@@ -16,7 +16,7 @@ import { Badge } from '@/components/ui/badge'
 
 import { cn } from '@/lib/utils'
 import { MotionPreset } from '@/components/ui/motion-preset'
-
+import { useIntlayer, useLocale } from 'react-intlayer'
 
 export type TestimonialItem = {
     avatar: string
@@ -28,74 +28,84 @@ export type TestimonialItem = {
     primary: boolean
   }
 
-  
-const testimonials: TestimonialItem[] = [
-    {
-      name: 'Paityn Lipshutz',
-      role: 'Product Lead',
-      company: 'NovaTech Labs',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-2.png?width=40&height=40&format=auto',
-      content:
-        'This tool transformed our workflow—clean design, seamless performance, and saves us hours every week. Truly exceptional.',
-      className: 'bg-primary text-white',
-      primary: true
-    },
-    {
-      name: 'Angel Lubin',
-      role: 'COO',
-      company: 'Aerius Systems',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-17.png?width=40&height=40&format=auto',
-      content:
-        'Outstanding experience—setup was effortless, and the platform has been incredibly reliable. Support responded within minutes.',
-      className: 'bg-warning text-primary',
-      primary: false
-    },
-    {
-      name: 'Lincoln Stanton',
-      role: 'Founder',
-      company: 'Brightline Studios',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-1.png?width=40&height=40&format=auto',
-      content:
-        'A phenomenal product—robust features, intuitive UI, and consistent performance. Completely exceeded expectations.',
-      className: 'bg-primary text-white',
-      primary: true
-    },
-    {
-      name: 'Skylar Lipshutz',
-      role: 'UX Lead',
-      company: 'PixelForge',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-12.png?width=40&height=40&format=auto',
-      content:
-        'Beautifully crafted and incredibly easy to use. This instantly improved our team’s productivity. Highly recommended.',
-      className: 'bg-warning text-primary', 
-      primary: false
-    },
-    {
-      name: 'Corey Franci',
-      role: 'CTO',
-      company: 'CloudNova',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-7.png?width=40&height=40&format=auto',
-      content:
-        'Remarkable quality—fast, stable, and thoughtfully built. The support team handled every question with expertise.',
-      className: 'bg-primary text-white',
-      primary: true
-    },
-    {
-      name: 'Anika Franci',
-      role: 'Engineer',
-      company: 'SupportFlow',
-      avatar: 'https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-2.png?width=40&height=40&format=auto',
-      content:
-        'Highly efficient and incredibly user-friendly. Delivered exactly what we needed with flawless customer support.',
-      className: 'bg-warning text-primary',
-      primary: false
-    }
-]
-  
 const Testimonials = () => {
+    const content = useIntlayer("home-page");
+    const { locale } = useLocale();
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
+    
+    // Helper to extract string from React element, translation object, or string
+    const getTranslatedValue = (val: any): string => {
+      // If already a string, return it
+      if (typeof val === 'string') return val
+      if (val == null) return ''
+      
+      // Check if it's a React element (has $$typeof property)
+      if (val && typeof val === 'object' && val.$$typeof) {
+        // React element - extract text from props.children
+        const extractTextFromReactElement = (element: any, depth = 0): string => {
+          if (depth > 10) return '' // Prevent infinite recursion
+          if (!element) return ''
+          if (typeof element === 'string') return element
+          if (typeof element === 'number') return String(element)
+          if (Array.isArray(element)) {
+            return element.map((child: any) => extractTextFromReactElement(child, depth + 1)).join('')
+          }
+          if (element.props) {
+            // Check props.children
+            if (element.props.children !== undefined) {
+              return extractTextFromReactElement(element.props.children, depth + 1)
+            }
+            // Check if there's a 'value' prop
+            if (element.props.value && typeof element.props.value === 'string') {
+              return element.props.value
+            }
+          }
+          return ''
+        }
+        const result = extractTextFromReactElement(val)
+        // Debug: log if result is empty
+        if (!result && val.props) {
+          console.log('Empty result from React element:', {
+            props: val.props,
+            type: val.type,
+            children: val.props.children
+          })
+        }
+        return result
+      }
+      
+      // If it's a regular object (translation object with locale keys)
+      if (typeof val === 'object') {
+        // If it's a translation object with locale keys, get value for current locale
+        if (locale && val[locale] && typeof val[locale] === 'string') {
+          return val[locale]
+        }
+        // Fallback to other locales
+        if (val.en && typeof val.en === 'string') return val.en
+        if (val.id && typeof val.id === 'string') return val.id
+        if (val.zh && typeof val.zh === 'string') return val.zh
+        // Try to get any string value from object
+        for (const key in val) {
+          if (typeof val[key] === 'string') return val[key]
+        }
+        return ''
+      }
+      
+      return String(val)
+    }
+
+    // Map testimonials from content with alternating primary/warning colors
+    const testimonials: TestimonialItem[] = content.testimonials.items.map((item: any, index: number) => ({
+      name: getTranslatedValue(item.name),
+      role: getTranslatedValue(item.role),
+      company: getTranslatedValue(item.company),
+      content: getTranslatedValue(item.content),
+      avatar: `https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-${(index % 6) + 1}.png?width=40&height=40&format=auto`,
+      className: index % 2 === 0 ? 'bg-primary text-white' : 'bg-warning text-primary',
+      primary: index % 2 === 0
+    }))
   
     useEffect(() => {
       if (!api) {
@@ -139,7 +149,7 @@ const Testimonials = () => {
             <div className='space-y-4'>
               <MotionPreset fade blur slide={{ offset: 50 }} transition={{ duration: 0.5 }}>
                 <Badge variant='outline' className='text-sm font-normal'>
-                  Testimonials
+                  {content.testimonials.badge}
                 </Badge>
               </MotionPreset>
   
@@ -152,14 +162,7 @@ const Testimonials = () => {
                 delay={0.3}
                 transition={{ duration: 0.5 }}
               >
-                Real Stories,{' '}
-                <span className='relative z-1'>
-                  Real People
-                  <span
-                    className='from-primary absolute bottom-0 left-0 -z-1 h-0.5 w-full rounded-full bg-linear-to-r to-transparent'
-                    aria-hidden='true'
-                  />
-                </span>
+                {content.testimonials.title}
               </MotionPreset>
   
               <MotionPreset
@@ -171,7 +174,7 @@ const Testimonials = () => {
                 delay={0.6}
                 transition={{ duration: 0.5 }}
               >
-                Check out what our awesome clients are saying about us!
+                {content.testimonials.description}
               </MotionPreset>
             </div>
   

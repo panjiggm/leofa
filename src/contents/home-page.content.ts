@@ -227,6 +227,157 @@ const homePageContent = {
         id: "/contact",
         zh: "/contact",
       }),
+    },
+    testimonials: {
+      badge: t({
+        en: "Testimonials",
+        id: "Testimoni",
+        zh: "客户评价",
+      }),
+      title: t({
+        en: "Real Stories, Real People",
+        id: "Kisah Nyata, Orang Nyata",
+        zh: "真实故事，真实人物",
+      }),
+      description: t({
+        en: "Check out what our awesome clients are saying about us!",
+        id: "Lihat apa yang dikatakan klien kami tentang kami!",
+        zh: "看看我们的客户对我们的评价！",
+      }),
+      items: [
+        {
+          name: t({
+            en: "Budi Santoso",
+            id: "Budi Santoso",
+            zh: "Budi Santoso",
+          }),
+          role: t({
+            en: "Owner",
+            id: "Pemilik",
+            zh: "所有者",
+          }),
+          company: t({
+            en: "Furniture Maju Jaya",
+            id: "Furniture Maju Jaya",
+            zh: "Furniture Maju Jaya",
+          }),
+          content: t({
+            en: "LEOFA's foam products have transformed our furniture production. The quality is exceptional and the density options perfectly match our needs. Highly recommended for any furniture manufacturer.",
+            id: "Produk busa LEOFA telah mengubah produksi furniture kami. Kualitasnya luar biasa dan pilihan densitasnya sangat sesuai dengan kebutuhan kami. Sangat direkomendasikan untuk produsen furniture manapun.",
+            zh: "LEOFA的泡沫产品改变了我们的家具生产。质量卓越，密度选项完美匹配我们的需求。强烈推荐给任何家具制造商。",
+          }),
+        },
+        {
+          name: t({
+            en: "Siti Nurhaliza",
+            id: "Siti Nurhaliza",
+            zh: "Siti Nurhaliza",
+          }),
+          role: t({
+            en: "Production Manager",
+            id: "Manajer Produksi",
+            zh: "生产经理",
+          }),
+          company: t({
+            en: "Kasur Sejahtera",
+            id: "Kasur Sejahtera",
+            zh: "Kasur Sejahtera",
+          }),
+          content: t({
+            en: "We've been using LEOFA foam for our mattresses for over 5 years. The consistency and durability are unmatched. Our customers always praise the comfort of our products.",
+            id: "Kami telah menggunakan busa LEOFA untuk kasur kami selama lebih dari 5 tahun. Konsistensi dan ketahanannya tidak tertandingi. Pelanggan kami selalu memuji kenyamanan produk kami.",
+            zh: "我们使用LEOFA泡沫制作床垫已超过5年。一致性和耐用性无与伦比。我们的客户总是称赞我们产品的舒适性。",
+          }),
+        },
+        {
+          name: t({
+            en: "Ahmad Rizki",
+            id: "Ahmad Rizki",
+            zh: "Ahmad Rizki",
+          }),
+          role: t({
+            en: "Founder",
+            id: "Pendiri",
+            zh: "创始人",
+          }),
+          company: t({
+            en: "Auto Detailing Pro",
+            id: "Auto Detailing Pro",
+            zh: "Auto Detailing Pro",
+          }),
+          content: t({
+            en: "Project9 products from LEOFA are game-changers for our automotive detailing business. The foam quality and precision make our work so much more efficient. Excellent results every time.",
+            id: "Produk Project9 dari LEOFA adalah pengubah permainan untuk bisnis detailing otomotif kami. Kualitas busa dan presisinya membuat pekerjaan kami jauh lebih efisien. Hasil yang luar biasa setiap kali.",
+            zh: "LEOFA的Project9产品改变了我们的汽车美容业务。泡沫质量和精确度使我们的工作更加高效。每次都取得出色的效果。",
+          }),
+        },
+        {
+          name: t({
+            en: "Dewi Lestari",
+            id: "Dewi Lestari",
+            zh: "Dewi Lestari",
+          }),
+          role: t({
+            en: "Purchasing Manager",
+            id: "Manajer Pembelian",
+            zh: "采购经理",
+          }),
+          company: t({
+            en: "Sofa Indonesia",
+            id: "Sofa Indonesia",
+            zh: "Sofa Indonesia",
+          }),
+          content: t({
+            en: "The customizable density options from LEOFA allow us to create sofas with perfect comfort levels. Our production efficiency has improved significantly since partnering with them.",
+            id: "Pilihan densitas yang dapat disesuaikan dari LEOFA memungkinkan kami membuat sofa dengan tingkat kenyamanan yang sempurna. Efisiensi produksi kami meningkat secara signifikan sejak bermitra dengan mereka.",
+            zh: "LEOFA的可定制密度选项使我们能够制造具有完美舒适度的沙发。自与他们合作以来，我们的生产效率显著提高。",
+          }),
+        },
+        {
+          name: t({
+            en: "Rudi Hartono",
+            id: "Rudi Hartono",
+            zh: "Rudi Hartono",
+          }),
+          role: t({
+            en: "Operations Director",
+            id: "Direktur Operasional",
+            zh: "运营总监",
+          }),
+          company: t({
+            en: "Shinjiru Sleep Solutions",
+            id: "Shinjiru Sleep Solutions",
+            zh: "Shinjiru Sleep Solutions",
+          }),
+          content: t({
+            en: "Shinjiru's partnership with LEOFA has been outstanding. The foam quality meets our high standards, and the support team is always responsive. Our customers love the comfort of our mattresses.",
+            id: "Kemitraan Shinjiru dengan LEOFA sangat luar biasa. Kualitas busa memenuhi standar tinggi kami, dan tim dukungan selalu responsif. Pelanggan kami menyukai kenyamanan kasur kami.",
+            zh: "Shinjiru与LEOFA的合作非常出色。泡沫质量符合我们的高标准，支持团队总是积极响应。我们的客户喜欢我们床垫的舒适性。",
+          }),
+        },
+        {
+          name: t({
+            en: "Maya Sari",
+            id: "Maya Sari",
+            zh: "Maya Sari",
+          }),
+          role: t({
+            en: "Quality Control Manager",
+            id: "Manajer Kontrol Kualitas",
+            zh: "质量控制经理",
+          }),
+          company: t({
+            en: "Fashion Foam Industries",
+            id: "Fashion Foam Industries",
+            zh: "Fashion Foam Industries",
+          }),
+          content: t({
+            en: "LEOFA's foam materials for fashion applications are top-notch. The consistency in quality and reliable delivery make them our trusted supplier. Great partnership!",
+            id: "Bahan busa LEOFA untuk aplikasi fashion sangat bagus. Konsistensi kualitas dan pengiriman yang dapat diandalkan menjadikan mereka supplier terpercaya kami. Kemitraan yang hebat!",
+            zh: "LEOFA用于时尚应用的泡沫材料是一流的。质量的一致性和可靠的交付使他们成为我们值得信赖的供应商。很棒的合作伙伴关系！",
+          }),
+        },
+      ],
     }
   },
 } satisfies Dictionary;

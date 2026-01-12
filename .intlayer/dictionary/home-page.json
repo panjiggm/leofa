@@ -64,6 +64,49 @@
           "description": "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",
           "buttonText": "Contact Us",
           "buttonLink": "/contact"
+        },
+        "testimonials": {
+          "badge": "Testimonials",
+          "title": "Real Stories, Real People",
+          "description": "Check out what our awesome clients are saying about us!",
+          "items": [
+            {
+              "name": "Budi Santoso",
+              "role": "Owner",
+              "company": "Furniture Maju Jaya",
+              "content": "LEOFA's foam products have transformed our furniture production. The quality is exceptional and the density options perfectly match our needs. Highly recommended for any furniture manufacturer."
+            },
+            {
+              "name": "Siti Nurhaliza",
+              "role": "Production Manager",
+              "company": "Kasur Sejahtera",
+              "content": "We've been using LEOFA foam for our mattresses for over 5 years. The consistency and durability are unmatched. Our customers always praise the comfort of our products."
+            },
+            {
+              "name": "Ahmad Rizki",
+              "role": "Founder",
+              "company": "Auto Detailing Pro",
+              "content": "Project9 products from LEOFA are game-changers for our automotive detailing business. The foam quality and precision make our work so much more efficient. Excellent results every time."
+            },
+            {
+              "name": "Dewi Lestari",
+              "role": "Purchasing Manager",
+              "company": "Sofa Indonesia",
+              "content": "The customizable density options from LEOFA allow us to create sofas with perfect comfort levels. Our production efficiency has improved significantly since partnering with them."
+            },
+            {
+              "name": "Rudi Hartono",
+              "role": "Operations Director",
+              "company": "Shinjiru Sleep Solutions",
+              "content": "Shinjiru's partnership with LEOFA has been outstanding. The foam quality meets our high standards, and the support team is always responsive. Our customers love the comfort of our mattresses."
+            },
+            {
+              "name": "Maya Sari",
+              "role": "Quality Control Manager",
+              "company": "Fashion Foam Industries",
+              "content": "LEOFA's foam materials for fashion applications are top-notch. The consistency in quality and reliable delivery make them our trusted supplier. Great partnership!"
+            }
+          ]
         }
       },
       "id": {
@@ -127,6 +170,49 @@
           "description": "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",
           "buttonText": "Hubungi Kami",
           "buttonLink": "/contact"
+        },
+        "testimonials": {
+          "badge": "Testimoni",
+          "title": "Kisah Nyata, Orang Nyata",
+          "description": "Lihat apa yang dikatakan klien kami tentang kami!",
+          "items": [
+            {
+              "name": "Budi Santoso",
+              "role": "Pemilik",
+              "company": "Furniture Maju Jaya",
+              "content": "Produk busa LEOFA telah mengubah produksi furniture kami. Kualitasnya luar biasa dan pilihan densitasnya sangat sesuai dengan kebutuhan kami. Sangat direkomendasikan untuk produsen furniture manapun."
+            },
+            {
+              "name": "Siti Nurhaliza",
+              "role": "Manajer Produksi",
+              "company": "Kasur Sejahtera",
+              "content": "Kami telah menggunakan busa LEOFA untuk kasur kami selama lebih dari 5 tahun. Konsistensi dan ketahanannya tidak tertandingi. Pelanggan kami selalu memuji kenyamanan produk kami."
+            },
+            {
+              "name": "Ahmad Rizki",
+              "role": "Pendiri",
+              "company": "Auto Detailing Pro",
+              "content": "Produk Project9 dari LEOFA adalah pengubah permainan untuk bisnis detailing otomotif kami. Kualitas busa dan presisinya membuat pekerjaan kami jauh lebih efisien. Hasil yang luar biasa setiap kali."
+            },
+            {
+              "name": "Dewi Lestari",
+              "role": "Manajer Pembelian",
+              "company": "Sofa Indonesia",
+              "content": "Pilihan densitas yang dapat disesuaikan dari LEOFA memungkinkan kami membuat sofa dengan tingkat kenyamanan yang sempurna. Efisiensi produksi kami meningkat secara signifikan sejak bermitra dengan mereka."
+            },
+            {
+              "name": "Rudi Hartono",
+              "role": "Direktur Operasional",
+              "company": "Shinjiru Sleep Solutions",
+              "content": "Kemitraan Shinjiru dengan LEOFA sangat luar biasa. Kualitas busa memenuhi standar tinggi kami, dan tim dukungan selalu responsif. Pelanggan kami menyukai kenyamanan kasur kami."
+            },
+            {
+              "name": "Maya Sari",
+              "role": "Manajer Kontrol Kualitas",
+              "company": "Fashion Foam Industries",
+              "content": "Bahan busa LEOFA untuk aplikasi fashion sangat bagus. Konsistensi kualitas dan pengiriman yang dapat diandalkan menjadikan mereka supplier terpercaya kami. Kemitraan yang hebat!"
+            }
+          ]
         }
       },
       "zh": {
@@ -190,6 +276,49 @@
           "description": "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
           "buttonText": "联系我们",
           "buttonLink": "/contact"
+        },
+        "testimonials": {
+          "badge": "客户评价",
+          "title": "真实故事，真实人物",
+          "description": "看看我们的客户对我们的评价！",
+          "items": [
+            {
+              "name": "Budi Santoso",
+              "role": "所有者",
+              "company": "Furniture Maju Jaya",
+              "content": "LEOFA的泡沫产品改变了我们的家具生产。质量卓越，密度选项完美匹配我们的需求。强烈推荐给任何家具制造商。"
+            },
+            {
+              "name": "Siti Nurhaliza",
+              "role": "生产经理",
+              "company": "Kasur Sejahtera",
+              "content": "我们使用LEOFA泡沫制作床垫已超过5年。一致性和耐用性无与伦比。我们的客户总是称赞我们产品的舒适性。"
+            },
+            {
+              "name": "Ahmad Rizki",
+              "role": "创始人",
+              "company": "Auto Detailing Pro",
+              "content": "LEOFA的Project9产品改变了我们的汽车美容业务。泡沫质量和精确度使我们的工作更加高效。每次都取得出色的效果。"
+            },
+            {
+              "name": "Dewi Lestari",
+              "role": "采购经理",
+              "company": "Sofa Indonesia",
+              "content": "LEOFA的可定制密度选项使我们能够制造具有完美舒适度的沙发。自与他们合作以来，我们的生产效率显著提高。"
+            },
+            {
+              "name": "Rudi Hartono",
+              "role": "运营总监",
+              "company": "Shinjiru Sleep Solutions",
+              "content": "Shinjiru与LEOFA的合作非常出色。泡沫质量符合我们的高标准，支持团队总是积极响应。我们的客户喜欢我们床垫的舒适性。"
+            },
+            {
+              "name": "Maya Sari",
+              "role": "质量控制经理",
+              "company": "Fashion Foam Industries",
+              "content": "LEOFA用于时尚应用的泡沫材料是一流的。质量的一致性和可靠的交付使他们成为我们值得信赖的供应商。很棒的合作伙伴关系！"
+            }
+          ]
         }
       }
     }

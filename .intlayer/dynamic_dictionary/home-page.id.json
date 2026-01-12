@@ -61,6 +61,49 @@
       "description": "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",
       "buttonText": "Hubungi Kami",
       "buttonLink": "/contact"
+    },
+    "testimonials": {
+      "badge": "Testimoni",
+      "title": "Kisah Nyata, Orang Nyata",
+      "description": "Lihat apa yang dikatakan klien kami tentang kami!",
+      "items": [
+        {
+          "name": "Budi Santoso",
+          "role": "Pemilik",
+          "company": "Furniture Maju Jaya",
+          "content": "Produk busa LEOFA telah mengubah produksi furniture kami. Kualitasnya luar biasa dan pilihan densitasnya sangat sesuai dengan kebutuhan kami. Sangat direkomendasikan untuk produsen furniture manapun."
+        },
+        {
+          "name": "Siti Nurhaliza",
+          "role": "Manajer Produksi",
+          "company": "Kasur Sejahtera",
+          "content": "Kami telah menggunakan busa LEOFA untuk kasur kami selama lebih dari 5 tahun. Konsistensi dan ketahanannya tidak tertandingi. Pelanggan kami selalu memuji kenyamanan produk kami."
+        },
+        {
+          "name": "Ahmad Rizki",
+          "role": "Pendiri",
+          "company": "Auto Detailing Pro",
+          "content": "Produk Project9 dari LEOFA adalah pengubah permainan untuk bisnis detailing otomotif kami. Kualitas busa dan presisinya membuat pekerjaan kami jauh lebih efisien. Hasil yang luar biasa setiap kali."
+        },
+        {
+          "name": "Dewi Lestari",
+          "role": "Manajer Pembelian",
+          "company": "Sofa Indonesia",
+          "content": "Pilihan densitas yang dapat disesuaikan dari LEOFA memungkinkan kami membuat sofa dengan tingkat kenyamanan yang sempurna. Efisiensi produksi kami meningkat secara signifikan sejak bermitra dengan mereka."
+        },
+        {
+          "name": "Rudi Hartono",
+          "role": "Direktur Operasional",
+          "company": "Shinjiru Sleep Solutions",
+          "content": "Kemitraan Shinjiru dengan LEOFA sangat luar biasa. Kualitas busa memenuhi standar tinggi kami, dan tim dukungan selalu responsif. Pelanggan kami menyukai kenyamanan kasur kami."
+        },
+        {
+          "name": "Maya Sari",
+          "role": "Manajer Kontrol Kualitas",
+          "company": "Fashion Foam Industries",
+          "content": "Bahan busa LEOFA untuk aplikasi fashion sangat bagus. Konsistensi kualitas dan pengiriman yang dapat diandalkan menjadikan mereka supplier terpercaya kami. Kemitraan yang hebat!"
+        }
+      ]
     }
   },
   "localIds": [

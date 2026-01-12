@@ -61,6 +61,49 @@
       "description": "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",
       "buttonText": "Contact Us",
       "buttonLink": "/contact"
+    },
+    "testimonials": {
+      "badge": "Testimonials",
+      "title": "Real Stories, Real People",
+      "description": "Check out what our awesome clients are saying about us!",
+      "items": [
+        {
+          "name": "Budi Santoso",
+          "role": "Owner",
+          "company": "Furniture Maju Jaya",
+          "content": "LEOFA's foam products have transformed our furniture production. The quality is exceptional and the density options perfectly match our needs. Highly recommended for any furniture manufacturer."
+        },
+        {
+          "name": "Siti Nurhaliza",
+          "role": "Production Manager",
+          "company": "Kasur Sejahtera",
+          "content": "We've been using LEOFA foam for our mattresses for over 5 years. The consistency and durability are unmatched. Our customers always praise the comfort of our products."
+        },
+        {
+          "name": "Ahmad Rizki",
+          "role": "Founder",
+          "company": "Auto Detailing Pro",
+          "content": "Project9 products from LEOFA are game-changers for our automotive detailing business. The foam quality and precision make our work so much more efficient. Excellent results every time."
+        },
+        {
+          "name": "Dewi Lestari",
+          "role": "Purchasing Manager",
+          "company": "Sofa Indonesia",
+          "content": "The customizable density options from LEOFA allow us to create sofas with perfect comfort levels. Our production efficiency has improved significantly since partnering with them."
+        },
+        {
+          "name": "Rudi Hartono",
+          "role": "Operations Director",
+          "company": "Shinjiru Sleep Solutions",
+          "content": "Shinjiru's partnership with LEOFA has been outstanding. The foam quality meets our high standards, and the support team is always responsive. Our customers love the comfort of our mattresses."
+        },
+        {
+          "name": "Maya Sari",
+          "role": "Quality Control Manager",
+          "company": "Fashion Foam Industries",
+          "content": "LEOFA's foam materials for fashion applications are top-notch. The consistency in quality and reliable delivery make them our trusted supplier. Great partnership!"
+        }
+      ]
     }
   },
   "localIds": [

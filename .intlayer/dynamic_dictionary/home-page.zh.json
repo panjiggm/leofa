@@ -61,6 +61,49 @@
       "description": "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
       "buttonText": "联系我们",
       "buttonLink": "/contact"
+    },
+    "testimonials": {
+      "badge": "客户评价",
+      "title": "真实故事，真实人物",
+      "description": "看看我们的客户对我们的评价！",
+      "items": [
+        {
+          "name": "Budi Santoso",
+          "role": "所有者",
+          "company": "Furniture Maju Jaya",
+          "content": "LEOFA的泡沫产品改变了我们的家具生产。质量卓越，密度选项完美匹配我们的需求。强烈推荐给任何家具制造商。"
+        },
+        {
+          "name": "Siti Nurhaliza",
+          "role": "生产经理",
+          "company": "Kasur Sejahtera",
+          "content": "我们使用LEOFA泡沫制作床垫已超过5年。一致性和耐用性无与伦比。我们的客户总是称赞我们产品的舒适性。"
+        },
+        {
+          "name": "Ahmad Rizki",
+          "role": "创始人",
+          "company": "Auto Detailing Pro",
+          "content": "LEOFA的Project9产品改变了我们的汽车美容业务。泡沫质量和精确度使我们的工作更加高效。每次都取得出色的效果。"
+        },
+        {
+          "name": "Dewi Lestari",
+          "role": "采购经理",
+          "company": "Sofa Indonesia",
+          "content": "LEOFA的可定制密度选项使我们能够制造具有完美舒适度的沙发。自与他们合作以来，我们的生产效率显著提高。"
+        },
+        {
+          "name": "Rudi Hartono",
+          "role": "运营总监",
+          "company": "Shinjiru Sleep Solutions",
+          "content": "Shinjiru与LEOFA的合作非常出色。泡沫质量符合我们的高标准，支持团队总是积极响应。我们的客户喜欢我们床垫的舒适性。"
+        },
+        {
+          "name": "Maya Sari",
+          "role": "质量控制经理",
+          "company": "Fashion Foam Industries",
+          "content": "LEOFA用于时尚应用的泡沫材料是一流的。质量的一致性和可靠的交付使他们成为我们值得信赖的供应商。很棒的合作伙伴关系！"
+        }
+      ]
     }
   },
   "localIds": [
