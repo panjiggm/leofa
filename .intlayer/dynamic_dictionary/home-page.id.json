@@ -9,7 +9,31 @@
       "description": "LEOFA menyediakan bahan busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik.",
       "ctaButton": "Hubungi Kami"
     },
-    "about_us": {},
+    "about_us": {
+      "badge": "Tentang Kami",
+      "headerDescription": "Perjalanan kami menonjolkan kekuatan kolaborasi dan tekad. Bersama-sama, kami telah mengatasi rintangan, merayakan kesuksesan, dan menciptakan kisah kemajuan dan pencapaian.",
+      "ourStory": {
+        "name": "Kisah Kami",
+        "title": "Solusi Inovatif dan Terpercaya untuk Kebutuhan Busa Industri Anda",
+        "description": "Dengan pengalaman lebih dari satu dekade, kami berdedikasi untuk menyediakan produk busa berkualitas tinggi untuk berbagai sektor industri, mulai dari kasur dan sofa hingga otomotif, dengan mengutamakan inovasi dan integritas. Komitmen kami terhadap keunggulan telah menjadikan kami mitra terpercaya bagi bisnis yang mencari solusi busa yang andal. Kami terus berinvestasi dalam penelitian dan pengembangan untuk memenuhi tuntutan pasar yang terus berkembang sambil mempertahankan standar kualitas dan kepuasan pelanggan tertinggi.",
+        "buttonText": "Pelajari Lebih Lanjut",
+        "buttonLink": "/about"
+      },
+      "ourMission": {
+        "name": "Misi Kami",
+        "title": "Menyediakan Produk Berkualitas, Layanan Unggul, Inovatif, dan Menjaga Integritas Pelanggan",
+        "description": "Misi kami adalah menyediakan produk berkualitas, layanan unggul, inovatif, dan menjaga integritas pelanggan. Kami berusaha menjadi produsen busa terkemuka yang secara konsisten memberikan nilai luar biasa kepada klien kami melalui teknologi canggih, praktik berkelanjutan, dan komitmen yang teguh terhadap kepuasan pelanggan. Setiap produk yang kami ciptakan adalah bukti dedikasi kami terhadap keunggulan, memastikan bahwa mitra kami menerima solusi yang tidak hanya memenuhi tetapi melampaui harapan mereka.",
+        "buttonText": "Mulai",
+        "buttonLink": "/contact"
+      },
+      "ourVision": {
+        "name": "Visi Kami",
+        "title": "Menjadi Perusahaan Terpercaya dan Berintegritas demi Kepuasan Pelanggan Jangka Panjang",
+        "description": "Visi kami adalah menjadi perusahaan terpercaya dan berintegritas demi kepuasan pelanggan jangka panjang. Kami membayangkan masa depan di mana LEOFA diakui sebagai pemimpin industri dalam manufaktur busa, menetapkan tolok ukur baru untuk kualitas, inovasi, dan layanan pelanggan. Melalui komitmen teguh kami terhadap praktik bisnis yang etis dan pertumbuhan berkelanjutan, kami bertujuan untuk membangun hubungan yang langgeng dengan mitra kami dan berkontribusi positif bagi industri yang kami layani. Kami percaya bahwa kesuksesan sejati datang dari menciptakan nilai yang menguntungkan tidak hanya perusahaan kami, tetapi semua pemangku kepentingan yang terlibat.",
+        "buttonText": "Temukan Lebih Lanjut",
+        "buttonLink": "/about"
+      }
+    },
     "hot_products": {
       "title": "Produk Terbaik Kami",
       "description": "Lihat produk yang menjadi best seller kami."
