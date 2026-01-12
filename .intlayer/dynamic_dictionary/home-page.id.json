@@ -13,6 +13,24 @@
     "hot_products": {
       "title": "Produk Terbaik Kami",
       "description": "Lihat produk yang menjadi best seller kami."
+    },
+    "sub_brands": {
+      "project9": {
+        "name": "Project9",
+        "title": "Solusi Detailing Otomotif Profesional",
+        "description": "Dirancang untuk kebutuhan sektor otomotif dan detailing profesional, produk ini menawarkan presisi dan ketahanan untuk hasil poles yang efisien dan optimal.",
+        "badge": "Otomotif",
+        "link": "/project9",
+        "qualityLabel": "Standar Industri"
+      },
+      "shinjiru": {
+        "name": "Shinjiru",
+        "title": "Solusi Tidur Premium Berkualitas",
+        "description": "Lini produk perlengkapan tidur yang mencakup kasur, bantal, dan lainnya untuk menjawab kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar mutu tinggi.",
+        "badge": "Perlengkapan Tidur",
+        "link": "/shinjiru",
+        "qualityLabel": "Kelas Industri"
+      }
     }
   },
   "localIds": [

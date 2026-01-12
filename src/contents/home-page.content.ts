@@ -48,6 +48,72 @@ const homePageContent = {
         zh: "看看我们的最佳销售产品。",
       }),
     },
+    sub_brands: {
+      project9: {
+        name: t({
+          en: "Project9",
+          id: "Project9",
+          zh: "Project9",
+        }),
+        title: t({
+          en: "Professional Automotive Detailing Solutions",
+          id: "Solusi Detailing Otomotif Profesional",
+          zh: "专业汽车美容解决方案",
+        }),
+        description: t({
+          en: "Designed for automotive and professional detailing needs, our products offer precision and durability for efficient and optimal polishing results.",
+          id: "Dirancang untuk kebutuhan sektor otomotif dan detailing profesional, produk ini menawarkan presisi dan ketahanan untuk hasil poles yang efisien dan optimal.",
+          zh: "专为汽车和专业美容需求而设计，我们的产品提供精确性和耐用性，实现高效和最佳的抛光效果。",
+        }),
+        badge: t({
+          en: "Automotive",
+          id: "Otomotif",
+          zh: "汽车",
+        }),
+        link: t({
+          en: "/project9",
+          id: "/project9",
+          zh: "/project9",
+        }),
+        qualityLabel: t({
+          en: "Industrial Grade",
+          id: "Standar Industri",
+          zh: "工业级",
+        }),
+      },
+      shinjiru: {
+        name: t({
+          en: "Shinjiru",
+          id: "Shinjiru",
+          zh: "Shinjiru",
+        }),
+        title: t({
+          en: "Premium Quality Sleep Solutions",
+          id: "Solusi Tidur Premium Berkualitas",
+          zh: "优质品质睡眠解决方案",
+        }),
+        description: t({
+          en: "A line of sleep products including mattresses, pillows, and more to meet the sleep comfort needs of Indonesian people with high quality standards.",
+          id: "Lini produk perlengkapan tidur yang mencakup kasur, bantal, dan lainnya untuk menjawab kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar mutu tinggi.",
+          zh: "包括床垫、枕头等的睡眠产品系列，以高质量标准满足印尼人民的睡眠舒适需求。",
+        }),
+        badge: t({
+          en: "Sleep Products",
+          id: "Perlengkapan Tidur",
+          zh: "睡眠产品",
+        }),
+        link: t({
+          en: "/shinjiru",
+          id: "/shinjiru",
+          zh: "/shinjiru",
+        }),
+        qualityLabel: t({
+          en: "Industrial Grade",
+          id: "Kelas Industri",
+          zh: "工业级",
+        }),
+      },
+    },
   },
 } satisfies Dictionary;
 

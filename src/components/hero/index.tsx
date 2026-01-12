@@ -1,39 +1,36 @@
-import { ArrowUpRightIcon, CalendarDaysIcon } from 'lucide-react'
+import { ArrowUpRightIcon, ShieldCheckIcon } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { useIntlayer } from 'react-intlayer'
+import { Link } from '@tanstack/react-router'
 import logoProject9 from '@/assets/images/logo-project-9.png'
 import logoShinjiru from '@/assets/images/logo-shinjiru.png'
 
-const blogdata = [
+const HeroSection = () => {
+  const content = useIntlayer("home-page");
+
+  const subbrands = [
     {
       img: logoProject9,
-      date: 'January 20, 2026',
-      blogTitle: 'Build with Empathy for Better User Outcomes',
-      description: 'Understand user needs to create intuitive and lovable experiences.',
-      author: 'Allen Reilly',
-      badge: 'UI',
-      authorLink: '#',
-      blogLink: '#',
-      categoryLink: '#'
+      name: content.sub_brands.project9.name,
+      title: content.sub_brands.project9.title,
+      description: content.sub_brands.project9.description,
+      badge: content.sub_brands.project9.badge,
+      link: content.sub_brands.project9.link,
+      qualityLabel: content.sub_brands.project9.qualityLabel,
     },
     {
       img: logoShinjiru,
-      date: 'May 20, 2025',
-      blogTitle: 'Write Code That Scales with Your Product',
-      description: 'Structure your projects for easier updates, faster growth, and bugs.',
-      author: 'Sara Wilkerson',
-      badge: 'Coding',
-      authorLink: '#',
-      blogLink: '#',
-      categoryLink: '#'
-    }
-  ]
-
-const HeroSection = () => {
-  const content = useIntlayer("home-page");
+      name: content.sub_brands.shinjiru.name,
+      title: content.sub_brands.shinjiru.title,
+      description: content.sub_brands.shinjiru.description,
+      badge: content.sub_brands.shinjiru.badge,
+      link: content.sub_brands.shinjiru.link,
+      qualityLabel: content.sub_brands.shinjiru.qualityLabel,
+    },
+  ];
 
   return (
     <section className='bg-muted pt-32 pb-12 sm:pb-16 lg:pb-24'>
@@ -59,47 +56,47 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* Sub Brands Section */}
         <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
-          {blogdata.map((item, index) => (
-            <Card key={`${item.author}-${index}`} className='group py-0 shadow-none'>
+          {subbrands.map((brand, index) => (
+            <Card key={`${brand.name}-${index}`} className='group py-0 shadow-none hover:shadow-md transition-shadow duration-300'>
               <CardContent className='grid grid-cols-1 px-0 xl:grid-cols-2'>
                 <div className='p-6'>
                   <div className='h-59.5 w-full overflow-hidden rounded-lg'>
                     <img
-                      src={item.img}
-                      alt={item.author}
-                      className='w-full object-cover transition-transform duration-300 group-hover:scale-105'
+                      src={brand.img}
+                      alt={String(brand.name)}
+                      className='w-full h-full object-contain transition-transform duration-300 group-hover:scale-105'
                     />
                   </div>
                 </div>
-                <div className='flex flex-col justify-center gap-3 p-6'>
-                  <div className='flex items-center gap-1.5 py-1'>
-                    <div className='text-muted-foreground flex grow items-center gap-1.5'>
-                      <CalendarDaysIcon className='size-6' />
-                      <p>{item.date}</p>
-                    </div>
-                    <a href={item.categoryLink}>
-                      <Badge className='bg-primary/10 text-primary border-0 text-sm'>{item.badge}</Badge>
-                    </a>
+                <div className='flex flex-col justify-center gap-4 p-6'>
+                  <div className='flex items-center justify-between'>
+                  <h3 className='text-xl font-black text-muted-foreground'>{brand.name}</h3>
+                    <Badge className='bg-primary/10 text-primary border-0 text-sm'>
+                      {brand.badge}
+                    </Badge>
                   </div>
-                  <a href={item.blogLink}>
-                    <h3 className='text-xl font-medium'>{item.blogTitle}</h3>
-                  </a>
-
-                  <p className='text-muted-foreground'>{item.blogTitle}</p>
-                  <div className='flex w-full items-center justify-between gap-1 py-1'>
-                    <a href={item.authorLink} className='text-sm font-medium'>
-                      {item.author}
-                    </a>
+                  <h4 className='text-xl font-medium text-foreground'>{brand.title}</h4>
+                  <p className='text-muted-foreground font-medium leading-relaxed line-clamp-2'>
+                    {brand.description}
+                  </p>
+                  <div className='flex w-full items-center justify-between gap-1 pt-2'>
+                    <div className='flex items-center gap-1'>
+                      <ShieldCheckIcon className='size-4 text-green-600' />
+                      <p className='text-sm text-green-600'>
+                        {brand.qualityLabel}
+                      </p>
+                    </div>
                     <Button
                       size='icon'
                       variant='outline'
-                      className='group-hover:bg-primary! hover:bg-primary! hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
+                      className='group-hover:bg-primary hover:bg-primary hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
                       asChild
                     >
-                      <a href={item.blogLink}>
+                      <Link to={String(brand.link)}>
                         <ArrowUpRightIcon />
-                      </a>
+                      </Link>
                     </Button>
                   </div>
                 </div>
