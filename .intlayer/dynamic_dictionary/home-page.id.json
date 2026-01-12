@@ -55,6 +55,12 @@
         "link": "/shinjiru",
         "qualityLabel": "Kelas Industri"
       }
+    },
+    "cta": {
+      "title": "Siap untuk Memulai?",
+      "description": "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",
+      "buttonText": "Hubungi Kami",
+      "buttonLink": "/contact"
     }
   },
   "localIds": [

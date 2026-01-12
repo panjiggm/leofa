@@ -59,6 +59,12 @@ export default {
             "link": "/shinjiru",
             "qualityLabel": "Industrial Grade"
           }
+        },
+        "cta": {
+          "title": "Ready to Get Started?",
+          "description": "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",
+          "buttonText": "Contact Us",
+          "buttonLink": "/contact"
         }
       },
       "id": {
@@ -116,6 +122,12 @@ export default {
             "link": "/shinjiru",
             "qualityLabel": "Kelas Industri"
           }
+        },
+        "cta": {
+          "title": "Siap untuk Memulai?",
+          "description": "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",
+          "buttonText": "Hubungi Kami",
+          "buttonLink": "/contact"
         }
       },
       "zh": {
@@ -173,6 +185,12 @@ export default {
             "link": "/shinjiru",
             "qualityLabel": "工业级"
           }
+        },
+        "cta": {
+          "title": "准备开始了吗？",
+          "description": "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
+          "buttonText": "联系我们",
+          "buttonLink": "/contact"
         }
       }
     }

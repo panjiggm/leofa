@@ -55,6 +55,12 @@
         "link": "/shinjiru",
         "qualityLabel": "工业级"
       }
+    },
+    "cta": {
+      "title": "准备开始了吗？",
+      "description": "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
+      "buttonText": "联系我们",
+      "buttonLink": "/contact"
     }
   },
   "localIds": [

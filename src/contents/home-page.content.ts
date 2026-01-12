@@ -206,6 +206,28 @@ const homePageContent = {
         }),
       },
     },
+    cta: {
+      title: t({
+        en: "Ready to Get Started?",
+        id: "Siap untuk Memulai?",
+        zh: "准备开始了吗？",
+      }),
+      description: t({
+        en: "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",
+        id: "Mari diskusikan kebutuhan solusi busa Anda. Tim kami siap membantu Anda menemukan produk yang sempurna untuk industri Anda.",
+        zh: "让我们讨论您的泡沫解决方案需求。我们的团队随时准备帮助您找到适合您行业的完美产品。",
+      }),
+      buttonText: t({
+        en: "Contact Us",
+        id: "Hubungi Kami",
+        zh: "联系我们",
+      }),
+      buttonLink: t({
+        en: "/contact",
+        id: "/contact",
+        zh: "/contact",
+      }),
+    }
   },
 } satisfies Dictionary;
 

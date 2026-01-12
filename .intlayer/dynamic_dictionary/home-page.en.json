@@ -55,6 +55,12 @@
         "link": "/shinjiru",
         "qualityLabel": "Industrial Grade"
       }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Let's discuss your foam solution needs. Our team is ready to help you find the perfect products for your industry.",
+      "buttonText": "Contact Us",
+      "buttonLink": "/contact"
     }
   },
   "localIds": [
