@@ -14,38 +14,38 @@ import { Marquee } from '@/components/ui/marquee'
 import { CraftButton, CraftButtonIcon, CraftButtonLabel } from '@/components/ui/craft-button'
 import { useIntlayer } from 'react-intlayer'
 
-const uiImages = [
+const project9Images = [
     {
       id: '1',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-04.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20design.png',
       alt: 'Image 1'
     },
     {
       id: '2',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-05.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20design.png',
       alt: 'Image 2'
     },
     {
       id: '3',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-06.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20design.png',
       alt: 'Image 3'
     }
   ]
   
-  const framerImages = [
+  const shinjiruImages = [
     {
       id: '1',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-01.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20Design%20438x362.png',
       alt: 'Modern UI Design'
     },
     {
       id: '2',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-02.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20Design%20438x362.png',
       alt: 'Creative Illustrations'
     },
     {
       id: '3',
-      img: 'https://cdn.shadcnstudio.com/ss-assets/template/landing-page/craft/image-03.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Untitled%20Design%20438x362.png',
       alt: 'Responsive Layouts'
     }
   ]
@@ -133,7 +133,7 @@ const MainProducts = () => {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ImageStack images={uiImages} />
+                  <ImageStack images={project9Images} />
                 </CardContent>
               </Card>
             </MotionPreset>
@@ -196,7 +196,7 @@ const MainProducts = () => {
                   </CardDescription>
                 </CardHeader>
                 <Marquee pauseOnHover duration={20} gap={1} className='flex-1 items-center py-0'>
-                  {framerImages.map((image, index) => (
+                  {shinjiruImages.map((image, index) => (
                     <img key={index} src={image.img} alt={image.alt} className='h-60 w-full max-w-73 rounded-md' />
                   ))}
                 </Marquee>
