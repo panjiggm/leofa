@@ -18,7 +18,7 @@ const HeroSection = () => {
       title: content.sub_brands.project9.title,
       description: content.sub_brands.project9.description,
       badge: content.sub_brands.project9.badge,
-      link: content.sub_brands.project9.link,
+      link: "/project9",
       qualityLabel: content.sub_brands.project9.qualityLabel,
     },
     {
@@ -27,7 +27,7 @@ const HeroSection = () => {
       title: content.sub_brands.shinjiru.title,
       description: content.sub_brands.shinjiru.description,
       badge: content.sub_brands.shinjiru.badge,
-      link: content.sub_brands.shinjiru.link,
+      link: "/shinjiru",
       qualityLabel: content.sub_brands.shinjiru.qualityLabel,
     },
   ];
@@ -94,7 +94,7 @@ const HeroSection = () => {
                       className='group-hover:bg-primary hover:bg-primary hover:text-primary-foreground group-hover:text-primary-foreground group-hover:border-transparent hover:border-transparent'
                       asChild
                     >
-                      <Link to={String(brand.link)}>
+                      <Link to={brand.link}>
                         <ArrowUpRightIcon />
                       </Link>
                     </Button>

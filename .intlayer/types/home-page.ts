@@ -48,7 +48,6 @@ export default {
             "title": "Professional Automotive Detailing Solutions",
             "description": "Designed for automotive and professional detailing needs, our products offer precision and durability for efficient and optimal polishing results.",
             "badge": "Automotive",
-            "link": "/project9",
             "qualityLabel": "Industrial Grade"
           },
           "shinjiru": {
@@ -56,7 +55,6 @@ export default {
             "title": "Premium Quality Sleep Solutions",
             "description": "A line of sleep products including mattresses, pillows, and more to meet the sleep comfort needs of Indonesian people with high quality standards.",
             "badge": "Sleep Products",
-            "link": "/shinjiru",
             "qualityLabel": "Industrial Grade"
           }
         },
