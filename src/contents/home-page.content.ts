@@ -13,7 +13,43 @@ const homePageContent = {
       id: "Leofa adalah produsen busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik.",
       zh: "Leofa 是一家值得信赖的高品质泡沫材料制造商，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。体验卓越的舒适性和耐用性。",
     }),
-      hero: {
+      header: {
+      navigation: {
+        home: t({
+          en: "Home",
+          id: "Beranda",
+          zh: "首页",
+        }),
+        categories: t({
+          en: "Categories",
+          id: "Kategori",
+          zh: "类别",
+        }),
+        team: t({
+          en: "Team",
+          id: "Tim",
+          zh: "团队",
+        }),
+        aboutUs: t({
+          en: "About Us",
+          id: "Tentang Kami",
+          zh: "关于我们",
+        }),
+      },
+      actions: {
+        getInTouch: t({
+          en: "Get in Touch",
+          id: "Hubungi Kami",
+          zh: "联系我们",
+        }),
+        menu: t({
+          en: "Menu",
+          id: "Menu",
+          zh: "菜单",
+        }),
+      },
+    },
+    hero: {
         badge: t({
           en: "Trusted Quality Foam Manufacturer",
           id: "Produsen Busa Berkualitas Terpercaya",

@@ -7,6 +7,18 @@ export default {
       "en": {
         "title": "Leofa | Innovative and Reliable Foam Solutions for Your Industry Needs",
         "description": "Leofa is a trusted manufacturer of high-quality foam materials with customizable density options for mattress, sofa, automotive detailing, and fashion industries. Experience superior comfort and durability.",
+        "header": {
+          "navigation": {
+            "home": "Home",
+            "categories": "Categories",
+            "team": "Team",
+            "aboutUs": "About Us"
+          },
+          "actions": {
+            "getInTouch": "Get in Touch",
+            "menu": "Menu"
+          }
+        },
         "hero": {
           "badge": "Trusted Quality Foam Manufacturer",
           "heading": "Premium Quality Foam Solutions for Your Industry Needs",
@@ -48,6 +60,7 @@ export default {
             "title": "Professional Automotive Detailing Solutions",
             "description": "Designed for automotive and professional detailing needs, our products offer precision and durability for efficient and optimal polishing results.",
             "badge": "Automotive",
+            "link": "/project9",
             "qualityLabel": "Industrial Grade"
           },
           "shinjiru": {
@@ -55,6 +68,7 @@ export default {
             "title": "Premium Quality Sleep Solutions",
             "description": "A line of sleep products including mattresses, pillows, and more to meet the sleep comfort needs of Indonesian people with high quality standards.",
             "badge": "Sleep Products",
+            "link": "/shinjiru",
             "qualityLabel": "Industrial Grade"
           }
         },
@@ -219,6 +233,18 @@ export default {
       "id": {
         "title": "Leofa | Solusi Inovatif dan Terpercaya untuk Kebutuhan Busa Industri Anda",
         "description": "Leofa adalah produsen busa berkualitas tinggi dengan pilihan densitas yang dapat disesuaikan untuk industri kasur, sofa, detailing automotif, dan fashion. Rasakan kenyamanan dan ketahanan terbaik.",
+        "header": {
+          "navigation": {
+            "home": "Beranda",
+            "categories": "Kategori",
+            "team": "Tim",
+            "aboutUs": "Tentang Kami"
+          },
+          "actions": {
+            "getInTouch": "Hubungi Kami",
+            "menu": "Menu"
+          }
+        },
         "hero": {
           "badge": "Produsen Busa Berkualitas Terpercaya",
           "heading": "Solusi Busa Berkualitas Premium untuk Kebutuhan Industri Anda",
@@ -433,6 +459,18 @@ export default {
       "zh": {
         "title": "Leofa | 创新与可靠的泡沫解决方案满足您的工业需求",
         "description": "Leofa 是一家值得信赖的高品质泡沫材料制造商，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。体验卓越的舒适性和耐用性。",
+        "header": {
+          "navigation": {
+            "home": "首页",
+            "categories": "类别",
+            "team": "团队",
+            "aboutUs": "关于我们"
+          },
+          "actions": {
+            "getInTouch": "联系我们",
+            "menu": "菜单"
+          }
+        },
         "hero": {
           "badge": "值得信赖的优质泡沫制造商",
           "heading": "满足您行业需求的高品质泡沫解决方案",

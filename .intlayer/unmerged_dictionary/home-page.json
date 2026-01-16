@@ -18,6 +18,60 @@
           "zh": "Leofa 是一家值得信赖的高品质泡沫材料制造商，具有可定制的密度选项，适用于床垫、沙发、汽车美容和时尚行业。体验卓越的舒适性和耐用性。"
         }
       },
+      "header": {
+        "navigation": {
+          "home": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Home",
+              "id": "Beranda",
+              "zh": "首页"
+            }
+          },
+          "categories": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Categories",
+              "id": "Kategori",
+              "zh": "类别"
+            }
+          },
+          "team": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Team",
+              "id": "Tim",
+              "zh": "团队"
+            }
+          },
+          "aboutUs": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "About Us",
+              "id": "Tentang Kami",
+              "zh": "关于我们"
+            }
+          }
+        },
+        "actions": {
+          "getInTouch": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Get in Touch",
+              "id": "Hubungi Kami",
+              "zh": "联系我们"
+            }
+          },
+          "menu": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Menu",
+              "id": "Menu",
+              "zh": "菜单"
+            }
+          }
+        }
+      },
       "hero": {
         "badge": {
           "nodeType": "translation",

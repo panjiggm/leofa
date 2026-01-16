@@ -1,8 +1,8 @@
-'use client'
-
 import { MailIcon, MenuIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
+import { useLocation, useParams } from '@tanstack/react-router'
+import { getIntlayer } from 'intlayer'
 
 import MenuDropdown from './menu-dropdown'
 import MenuNavigation from './menu-navigation'
@@ -12,30 +12,61 @@ import { cn } from '@/lib/utils'
 
 import Logo from '../logo' 
 import { Link } from '@tanstack/react-router'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { LocaleSwitcher } from '../locale-switcher'
 
-const navigationData: NavigationSection[] = [
-  {
-    title: 'Home',
-    href: '#'
-  },
-  {
-    title: 'Categories',
-    href: '#'
-  },
-  {
-    title: 'Team',
-    href: '#'
-  },
-  {
-    title: 'About Us',
-    href: '#'
+const getLocaleFromUrl = (pathname: string, params: any): string => {
+  const validLocales = ['en', 'id', 'zh'];
+  
+  // Extract from pathname first - get first segment (most reliable for root route)
+  const pathSegments = pathname.split("/").filter(Boolean);
+  const firstSegment = pathSegments[0]?.toLowerCase();
+  
+  // Check if first segment is a valid locale
+  if (firstSegment && validLocales.includes(firstSegment)) {
+    return firstSegment;
   }
-]
+  
+  // Fallback to route params if available
+  const paramLocale = params?.locale?.toLowerCase();
+  if (paramLocale && validLocales.includes(paramLocale)) {
+    return paramLocale;
+  }
+  
+  // Default to 'en' (default locale from config)
+  return 'en';
+};
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const { pathname } = useLocation()
+  const params = useParams({ strict: false })
+  
+  // Calculate locale from URL - will recalculate on every render when pathname changes
+  const locale = getLocaleFromUrl(pathname, params)
+  
+  // Get content from server-side intlayer - will get fresh content for current locale
+  const content = getIntlayer("home-page", locale)
+
+  // Build navigation data dynamically from translations
+  const navigationData: NavigationSection[] = useMemo(() => [
+    {
+      title: content.header.navigation.home,
+      href: '#'
+    },
+    {
+      title: content.header.navigation.categories,
+      href: '#'
+    },
+    {
+      title: content.header.navigation.team,
+      href: '#'
+    },
+    {
+      title: content.header.navigation.aboutUs,
+      href: '#'
+    }
+  ], [content])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,7 +104,7 @@ const Header = () => {
           <LocaleSwitcher />
           
           <Button variant='outline' className='max-sm:hidden' asChild>
-            <a href='#'>Get in Touch</a>
+            <a href='#'>{content.header.actions.getInTouch}</a>
           </Button>
 
           {/* Navigation for small screens */}
@@ -83,11 +114,11 @@ const Header = () => {
                 <Button variant='outline' size='icon' className='sm:hidden' asChild>
                   <a href='#'>
                     <MailIcon />
-                    <span className='sr-only'>Get in Touch</span>
+                    <span className='sr-only'>{content.header.actions.getInTouch}</span>
                   </a>
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>Get in Touch</TooltipContent>
+              <TooltipContent>{content.header.actions.getInTouch}</TooltipContent>
             </Tooltip>
 
             <MenuDropdown
@@ -96,7 +127,7 @@ const Header = () => {
               trigger={
                 <Button variant='outline' size='icon' className='lg:hidden'>
                   <MenuIcon />
-                  <span className='sr-only'>Menu</span>
+                  <span className='sr-only'>{content.header.actions.menu}</span>
                 </Button>
               }
             />

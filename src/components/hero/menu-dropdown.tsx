@@ -13,24 +13,7 @@ import {
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
 
-export type NavigationItem = {
-  title: string
-  href: string
-}
-
-export type NavigationSection = {
-  title: string
-  icon?: ReactNode
-} & (
-  | {
-      items: NavigationItem[]
-      href?: never
-    }
-  | {
-      items?: never
-      href: string
-    }
-)
+import type { NavigationSection } from './menu-navigation'
 
 type Props = {
   trigger: ReactNode
@@ -43,10 +26,10 @@ const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent className='w-56' align={align}>
-        {navigationData.map(navItem => {
+        {navigationData.map((navItem, index) => {
           if (navItem.href) {
             return (
-              <DropdownMenuItem key={navItem.title} asChild>
+              <DropdownMenuItem key={index} asChild>
                 <a href={navItem.href}>
                   {navItem.icon}
                   {navItem.title}
@@ -56,7 +39,7 @@ const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
           }
 
           return (
-            <Collapsible key={navItem.title} asChild>
+            <Collapsible key={index} asChild>
               <DropdownMenuGroup>
                 <CollapsibleTrigger asChild>
                   <DropdownMenuItem onSelect={event => event.preventDefault()} className='justify-between'>
@@ -66,8 +49,8 @@ const MenuDropdown = ({ trigger, navigationData, align = 'start' }: Props) => {
                   </DropdownMenuItem>
                 </CollapsibleTrigger>
                 <CollapsibleContent className='pl-2'>
-                  {navItem.items?.map(item => (
-                    <DropdownMenuItem key={item.title} asChild>
+                  {navItem.items?.map((item, itemIndex) => (
+                    <DropdownMenuItem key={itemIndex} asChild>
                       <a href={item.href}>
                         <CircleSmallIcon />
                         <span>{item.title}</span>
