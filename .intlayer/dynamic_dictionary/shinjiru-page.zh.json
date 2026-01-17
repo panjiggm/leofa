@@ -1,0 +1,30 @@
+{
+  "key": "shinjiru-page",
+  "content": {
+    "title": "Shinjiru | 优质睡眠解决方案 - Leofa",
+    "description": "Shinjiru提供优质睡眠解决方案，包括床垫、枕头和床上用品配件。体验我们为印尼人民设计的高标准泡沫产品带来的卓越舒适感。",
+    "hero": {
+      "badge": "Shinjiru",
+      "heading": "以目标为驱动，以人为动力",
+      "subheading": "我们的成就故事充分证明了团队合作和毅力的重要性。团结一致，我们面对挑战、庆祝胜利，并编织成长与成功的故事。",
+      "buttons": {
+        "readMore": "阅读更多",
+        "freeTrial": "免费试用"
+      }
+    },
+    "carousel": {
+      "items": {
+        "approach": "方法",
+        "codeAgency": "代码机构",
+        "marketingStrategy": "营销策略",
+        "development": "开发",
+        "uiuxDesigner": "UI/UX设计师",
+        "marketing": "营销"
+      }
+    }
+  },
+  "localIds": [
+    "shinjiru-page::local::src/contents/shinjiru-page.content.ts"
+  ],
+  "locale": "zh"
+}

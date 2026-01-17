@@ -1,0 +1,30 @@
+{
+  "key": "project9-page",
+  "content": {
+    "title": "Project9 | Professional Automotive Detailing Foam Solutions - Leofa",
+    "description": "Project9 offers professional automotive detailing foam solutions with precision and durability. Our polishing pads and foam materials deliver efficient and optimal results for car care professionals.",
+    "hero": {
+      "badge": "Project9",
+      "heading": "Driven by Purpose, Powered by People",
+      "subheading": "Our achievement story stands as a powerful testament to teamwork and perseverance. United, we have faced challenges, celebrated victories, and woven a narrative of growth and success.",
+      "buttons": {
+        "readMore": "Read more",
+        "freeTrial": "Free trial"
+      }
+    },
+    "carousel": {
+      "items": {
+        "approach": "Approach",
+        "codeAgency": "Code Agency",
+        "marketingStrategy": "Marketing Strategy",
+        "development": "Development",
+        "uiuxDesigner": "UI/UX Designer",
+        "marketing": "Marketing"
+      }
+    }
+  },
+  "localIds": [
+    "project9-page::local::src/contents/project9-page.content.ts"
+  ],
+  "locale": "en"
+}

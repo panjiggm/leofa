@@ -1,0 +1,30 @@
+{
+  "key": "shinjiru-page",
+  "content": {
+    "title": "Shinjiru | Solusi Tidur Berkualitas Premium - Leofa",
+    "description": "Shinjiru menawarkan solusi tidur berkualitas premium termasuk kasur, bantal, dan aksesori tempat tidur. Rasakan kenyamanan superior dengan produk busa standar tinggi kami yang dirancang untuk masyarakat Indonesia.",
+    "hero": {
+      "badge": "Shinjiru",
+      "heading": "Didorong oleh Tujuan, Didukung oleh Manusia",
+      "subheading": "Kisah pencapaian kami adalah bukti kuat kerja sama tim dan ketekunan. Bersatu, kami telah menghadapi tantangan, merayakan kemenangan, dan merangkai narasi pertumbuhan dan kesuksesan.",
+      "buttons": {
+        "readMore": "Selengkapnya",
+        "freeTrial": "Uji coba gratis"
+      }
+    },
+    "carousel": {
+      "items": {
+        "approach": "Pendekatan",
+        "codeAgency": "Agensi Kode",
+        "marketingStrategy": "Strategi Pemasaran",
+        "development": "Pengembangan",
+        "uiuxDesigner": "Desainer UI/UX",
+        "marketing": "Pemasaran"
+      }
+    }
+  },
+  "localIds": [
+    "shinjiru-page::local::src/contents/shinjiru-page.content.ts"
+  ],
+  "locale": "id"
+}

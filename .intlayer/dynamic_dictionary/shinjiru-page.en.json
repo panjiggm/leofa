@@ -1,0 +1,30 @@
+{
+  "key": "shinjiru-page",
+  "content": {
+    "title": "Shinjiru | Premium Quality Sleep Solutions - Leofa",
+    "description": "Shinjiru offers premium quality sleep solutions including mattresses, pillows, and bedding accessories. Experience superior comfort with our high-standard foam products designed for Indonesian people.",
+    "hero": {
+      "badge": "Shinjiru",
+      "heading": "Driven by Purpose, Powered by People",
+      "subheading": "Our achievement story stands as a powerful testament to teamwork and perseverance. United, we have faced challenges, celebrated victories, and woven a narrative of growth and success.",
+      "buttons": {
+        "readMore": "Read more",
+        "freeTrial": "Free trial"
+      }
+    },
+    "carousel": {
+      "items": {
+        "approach": "Approach",
+        "codeAgency": "Code Agency",
+        "marketingStrategy": "Marketing Strategy",
+        "development": "Development",
+        "uiuxDesigner": "UI/UX Designer",
+        "marketing": "Marketing"
+      }
+    }
+  },
+  "localIds": [
+    "shinjiru-page::local::src/contents/shinjiru-page.content.ts"
+  ],
+  "locale": "en"
+}
