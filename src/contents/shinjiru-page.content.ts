@@ -15,64 +15,66 @@ const shinjiruPageContent = {
     }),
     hero: {
       badge: t({
-        en: "Shinjiru",
-        id: "Shinjiru",
-        zh: "Shinjiru",
+        en: "Premium Sleep Products",
+        id: "Produk Tidur Premium",
+        zh: "优质睡眠产品",
       }),
       heading: t({
-        en: "Driven by Purpose, Powered by People",
-        id: "Didorong oleh Tujuan, Didukung oleh Manusia",
-        zh: "以目标为驱动，以人为动力",
+        en: "Quality Sleep for Better Living",
+        id: "Tidur Berkualitas untuk Hidup Lebih Baik",
+        zh: "优质睡眠，美好生活",
       }),
       subheading: t({
-        en: "Our achievement story stands as a powerful testament to teamwork and perseverance. United, we have faced challenges, celebrated victories, and woven a narrative of growth and success.",
-        id: "Kisah pencapaian kami adalah bukti kuat kerja sama tim dan ketekunan. Bersatu, kami telah menghadapi tantangan, merayakan kemenangan, dan merangkai narasi pertumbuhan dan kesuksesan.",
-        zh: "我们的成就故事充分证明了团队合作和毅力的重要性。团结一致，我们面对挑战、庆祝胜利，并编织成长与成功的故事。",
+        en: "Shinjiru is a line of sleep equipment products including mattresses, pillows, and more to meet the sleep comfort needs of Indonesian people with high quality standards. Experience superior comfort every night.",
+        id: "Shinjiru adalah lini produk perlengkapan tidur yang mencakup kasur, bantal, dan lainnya untuk menjawab kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar mutu tinggi. Rasakan kenyamanan superior setiap malam.",
+        zh: "Shinjiru是一系列睡眠设备产品，包括床垫、枕头等，以高质量标准满足印尼人民的睡眠舒适需求。每晚体验卓越舒适。",
       }),
       buttons: {
-        readMore: t({
-          en: "Read more",
-          id: "Selengkapnya",
-          zh: "阅读更多",
+        contactUs: t({
+          en: "Contact Us",
+          id: "Hubungi Kami",
+          zh: "联系我们",
         }),
-        freeTrial: t({
-          en: "Free trial",
-          id: "Uji coba gratis",
-          zh: "免费试用",
+        viewProducts: t({
+          en: "View Products",
+          id: "Lihat Produk",
+          zh: "查看产品",
         }),
       },
     },
     carousel: {
-      items: {
-        approach: t({
-          en: "Approach",
-          id: "Pendekatan",
-          zh: "方法",
+      cards: {
+        comfort: t({
+          en: "Comfort",
+          id: "Kenyamanan",
+          zh: "舒适",
         }),
-        codeAgency: t({
-          en: "Code Agency",
-          id: "Agensi Kode",
-          zh: "代码机构",
+        quality: t({
+          en: "High Quality",
+          id: "Kualitas Tinggi",
+          zh: "高品质",
         }),
-        marketingStrategy: t({
-          en: "Marketing Strategy",
-          id: "Strategi Pemasaran",
-          zh: "营销策略",
+        durability: t({
+          en: "Durability",
+          id: "Ketahanan",
+          zh: "耐用",
         }),
-        development: t({
-          en: "Development",
-          id: "Pengembangan",
-          zh: "开发",
+      },
+      images: {
+        mattress: t({
+          en: "Mattress",
+          id: "Kasur",
+          zh: "床垫",
         }),
-        uiuxDesigner: t({
-          en: "UI/UX Designer",
-          id: "Desainer UI/UX",
-          zh: "UI/UX设计师",
+        pillow: t({
+          en: "Pillow",
+          id: "Bantal",
+          zh: "枕头",
         }),
-        marketing: t({
-          en: "Marketing",
-          id: "Pemasaran",
-          zh: "营销",
+        bedding: t({
+          en: "Bedding",
+          id: "Perlengkapan Tidur",
+          zh: "床上用品",
         }),
       },
     },

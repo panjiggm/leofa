@@ -22,94 +22,96 @@
         "badge": {
           "nodeType": "translation",
           "translation": {
-            "en": "Shinjiru",
-            "id": "Shinjiru",
-            "zh": "Shinjiru"
+            "en": "Premium Sleep Products",
+            "id": "Produk Tidur Premium",
+            "zh": "优质睡眠产品"
           }
         },
         "heading": {
           "nodeType": "translation",
           "translation": {
-            "en": "Driven by Purpose, Powered by People",
-            "id": "Didorong oleh Tujuan, Didukung oleh Manusia",
-            "zh": "以目标为驱动，以人为动力"
+            "en": "Quality Sleep for Better Living",
+            "id": "Tidur Berkualitas untuk Hidup Lebih Baik",
+            "zh": "优质睡眠，美好生活"
           }
         },
         "subheading": {
           "nodeType": "translation",
           "translation": {
-            "en": "Our achievement story stands as a powerful testament to teamwork and perseverance. United, we have faced challenges, celebrated victories, and woven a narrative of growth and success.",
-            "id": "Kisah pencapaian kami adalah bukti kuat kerja sama tim dan ketekunan. Bersatu, kami telah menghadapi tantangan, merayakan kemenangan, dan merangkai narasi pertumbuhan dan kesuksesan.",
-            "zh": "我们的成就故事充分证明了团队合作和毅力的重要性。团结一致，我们面对挑战、庆祝胜利，并编织成长与成功的故事。"
+            "en": "Shinjiru is a line of sleep equipment products including mattresses, pillows, and more to meet the sleep comfort needs of Indonesian people with high quality standards. Experience superior comfort every night.",
+            "id": "Shinjiru adalah lini produk perlengkapan tidur yang mencakup kasur, bantal, dan lainnya untuk menjawab kebutuhan kenyamanan tidur masyarakat Indonesia dengan standar mutu tinggi. Rasakan kenyamanan superior setiap malam.",
+            "zh": "Shinjiru是一系列睡眠设备产品，包括床垫、枕头等，以高质量标准满足印尼人民的睡眠舒适需求。每晚体验卓越舒适。"
           }
         },
         "buttons": {
-          "readMore": {
+          "contactUs": {
             "nodeType": "translation",
             "translation": {
-              "en": "Read more",
-              "id": "Selengkapnya",
-              "zh": "阅读更多"
+              "en": "Contact Us",
+              "id": "Hubungi Kami",
+              "zh": "联系我们"
             }
           },
-          "freeTrial": {
+          "viewProducts": {
             "nodeType": "translation",
             "translation": {
-              "en": "Free trial",
-              "id": "Uji coba gratis",
-              "zh": "免费试用"
+              "en": "View Products",
+              "id": "Lihat Produk",
+              "zh": "查看产品"
             }
           }
         }
       },
       "carousel": {
-        "items": {
-          "approach": {
+        "cards": {
+          "comfort": {
             "nodeType": "translation",
             "translation": {
-              "en": "Approach",
-              "id": "Pendekatan",
-              "zh": "方法"
+              "en": "Comfort",
+              "id": "Kenyamanan",
+              "zh": "舒适"
             }
           },
-          "codeAgency": {
+          "quality": {
             "nodeType": "translation",
             "translation": {
-              "en": "Code Agency",
-              "id": "Agensi Kode",
-              "zh": "代码机构"
+              "en": "High Quality",
+              "id": "Kualitas Tinggi",
+              "zh": "高品质"
             }
           },
-          "marketingStrategy": {
+          "durability": {
             "nodeType": "translation",
             "translation": {
-              "en": "Marketing Strategy",
-              "id": "Strategi Pemasaran",
-              "zh": "营销策略"
+              "en": "Durability",
+              "id": "Ketahanan",
+              "zh": "耐用"
+            }
+          }
+        },
+        "images": {
+          "mattress": {
+            "nodeType": "translation",
+            "translation": {
+              "en": "Mattress",
+              "id": "Kasur",
+              "zh": "床垫"
             }
           },
-          "development": {
+          "pillow": {
             "nodeType": "translation",
             "translation": {
-              "en": "Development",
-              "id": "Pengembangan",
-              "zh": "开发"
+              "en": "Pillow",
+              "id": "Bantal",
+              "zh": "枕头"
             }
           },
-          "uiuxDesigner": {
+          "bedding": {
             "nodeType": "translation",
             "translation": {
-              "en": "UI/UX Designer",
-              "id": "Desainer UI/UX",
-              "zh": "UI/UX设计师"
-            }
-          },
-          "marketing": {
-            "nodeType": "translation",
-            "translation": {
-              "en": "Marketing",
-              "id": "Pemasaran",
-              "zh": "营销"
+              "en": "Bedding",
+              "id": "Perlengkapan Tidur",
+              "zh": "床上用品"
             }
           }
         }

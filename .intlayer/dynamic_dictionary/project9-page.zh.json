@@ -4,22 +4,24 @@
     "title": "Project9 | 专业汽车美容泡沫解决方案 - Leofa",
     "description": "Project9提供精确耐用的专业汽车美容泡沫解决方案。我们的抛光垫和泡沫材料为汽车护理专业人士提供高效优质的效果。",
     "hero": {
-      "badge": "Project9",
-      "heading": "以目标为驱动，以人为动力",
-      "subheading": "我们的成就故事充分证明了团队合作和毅力的重要性。团结一致，我们面对挑战、庆祝胜利，并编织成长与成功的故事。",
+      "badge": "专业汽车美容",
+      "heading": "专业美容精密泡沫解决方案",
+      "subheading": "专为汽车行业和专业美容需求设计，Project9产品提供精确性和耐用性，实现高效和最佳的抛光效果。信赖专业人士选择的品质。",
       "buttons": {
-        "readMore": "阅读更多",
-        "freeTrial": "免费试用"
+        "contactUs": "联系我们",
+        "viewProducts": "查看产品"
       }
     },
     "carousel": {
-      "items": {
-        "approach": "方法",
-        "codeAgency": "代码机构",
-        "marketingStrategy": "营销策略",
-        "development": "开发",
-        "uiuxDesigner": "UI/UX设计师",
-        "marketing": "营销"
+      "cards": {
+        "precision": "精准",
+        "durability": "耐用",
+        "professional": "专业级"
+      },
+      "images": {
+        "polishing": "抛光垫",
+        "detailing": "美容工具",
+        "finishing": "修整泡沫"
       }
     }
   },

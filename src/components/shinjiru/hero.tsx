@@ -9,48 +9,63 @@ import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import { cn } from '@/lib/utils'
 import { MotionPreset } from '@/components/ui/motion-preset'
+import { getIntlayer } from 'intlayer'
+import { useLocation, useParams } from '@tanstack/react-router'
 
-type Data = {
-  title: string
-  bgColor: string
-}[]
-
-type Image = {
-  img: string
-  title: string
-}[]
-
-const data: Data = [
-  {
-    title: 'Approach',
-    bgColor: 'bg-sky-600/50 dark:bg-sky-400/40'
-  },
-  {
-    title: 'Code Agency',
-    bgColor: 'bg-green-600/50 dark:bg-green-400/40'
-  },
-  {
-    title: 'Marketing Strategy',
-    bgColor: 'bg-amber-600/50 dark:bg-amber-400/40'
+const getLocaleFromUrl = (pathname: string, params: any): string => {
+  const validLocales = ['en', 'id', 'zh'];
+  
+  const pathSegments = pathname.split("/").filter(Boolean);
+  const firstSegment = pathSegments[0]?.toLowerCase();
+  
+  if (firstSegment && validLocales.includes(firstSegment)) {
+    return firstSegment;
   }
-]
-
-const images: Image = [
-  {
-    img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-27.png',
-    title: 'Development'
-  },
-  {
-    img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-28.png',
-    title: 'UI/UX Designer'
-  },
-  {
-    img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-29.png',
-    title: 'Marketing'
+  
+  const paramLocale = params?.locale?.toLowerCase();
+  if (paramLocale && validLocales.includes(paramLocale)) {
+    return paramLocale;
   }
-]
+  
+  return 'en';
+};
 
 const HeroShinjiru = () => {
+  const { pathname } = useLocation()
+  const params = useParams({ strict: false })
+  const locale = getLocaleFromUrl(pathname, params)
+  const content = getIntlayer("shinjiru-page", locale)
+
+  const data = [
+    {
+      title: content.carousel.cards.comfort,
+      bgColor: 'bg-indigo-600/50 dark:bg-indigo-400/40'
+    },
+    {
+      title: content.carousel.cards.quality,
+      bgColor: 'bg-purple-600/50 dark:bg-purple-400/40'
+    },
+    {
+      title: content.carousel.cards.durability,
+      bgColor: 'bg-rose-600/50 dark:bg-rose-400/40'
+    }
+  ]
+
+  const images = [
+    {
+      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-27.png',
+      title: content.carousel.images.mattress
+    },
+    {
+      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-28.png',
+      title: content.carousel.images.pillow
+    },
+    {
+      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-29.png',
+      title: content.carousel.images.bedding
+    }
+  ]
+
   return (
     <section className='bg-muted overflow-hidden py-8 sm:py-16 lg:py-24'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
@@ -64,7 +79,7 @@ const HeroShinjiru = () => {
             slide={{ direction: 'up', offset: 50 }}
             transition={{ duration: 0.7 }}
           >
-            Shinjiru
+            {content.hero.badge}
           </MotionPreset>
 
           <MotionPreset
@@ -76,7 +91,7 @@ const HeroShinjiru = () => {
             delay={0.25}
             transition={{ duration: 0.7 }}
           >
-            Driven by Purpose, Powered by People
+            {content.hero.heading}
           </MotionPreset>
 
           <MotionPreset
@@ -88,8 +103,7 @@ const HeroShinjiru = () => {
             delay={0.5}
             transition={{ duration: 0.7 }}
           >
-            Our achievement story stands as a powerful testament to teamwork and perseverance. United, we have faced
-            challenges, celebrated victories, and woven a narrative of growth and success.
+            {content.hero.subheading}
           </MotionPreset>
 
           <MotionPreset
@@ -102,12 +116,12 @@ const HeroShinjiru = () => {
           >
             <Button size='lg' className='group rounded-lg text-base has-[>svg]:px-6' asChild>
               <a href='#'>
-                Read more
+                {content.hero.buttons.contactUs}
                 <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
               </a>
             </Button>
             <Button size='lg' variant='outline' className='group rounded-lg text-base shadow-none' asChild>
-              <a href='#'>Free trial</a>
+              <a href='#'>{content.hero.buttons.viewProducts}</a>
             </Button>
           </MotionPreset>
         </div>
@@ -142,7 +156,7 @@ const HeroShinjiru = () => {
                   {images[index] && (
                     <CarouselItem className='basis-auto pl-6'>
                       <div className='relative h-81 max-w-67 overflow-hidden rounded-2xl'>
-                        <img src={images[index].img} alt={images[index].title} className='size-full object-cover' />
+                        <img src={images[index].img} alt={String(images[index].title)} className='size-full object-cover' />
                         <div className='absolute top-4 right-4'>
                           <Badge className='px-3 py-1'>{images[index].title}</Badge>
                         </div>
@@ -189,7 +203,7 @@ const HeroShinjiru = () => {
                               cx='89.5'
                               cy='89.5'
                               r='43'
-                              stroke='url(#paint0_linear_11_412)'
+                              stroke='url(#paint0_linear_shinjiru)'
                               strokeOpacity='0.5'
                               strokeWidth='23'
                             />
@@ -197,13 +211,13 @@ const HeroShinjiru = () => {
                               cx='89.5'
                               cy='89.5'
                               r='78'
-                              stroke='url(#paint1_linear_11_412)'
+                              stroke='url(#paint1_linear_shinjiru)'
                               strokeOpacity='0.5'
                               strokeWidth='23'
                             />
                             <defs>
                               <linearGradient
-                                id='paint0_linear_11_412'
+                                id='paint0_linear_shinjiru'
                                 x1='89.5'
                                 y1='35'
                                 x2='89.5'
@@ -214,7 +228,7 @@ const HeroShinjiru = () => {
                                 <stop offset='1' stopColor='white' stopOpacity='0' />
                               </linearGradient>
                               <linearGradient
-                                id='paint1_linear_11_412'
+                                id='paint1_linear_shinjiru'
                                 x1='89.5'
                                 y1='0'
                                 x2='89.5'
