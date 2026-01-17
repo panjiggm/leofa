@@ -23,6 +23,44 @@
         "pillow": "Pillow",
         "bedding": "Bedding"
       }
+    },
+    "about": {
+      "badge": "About Shinjiru",
+      "heading": "Comfort That Indonesian Families Trust",
+      "description": "Shinjiru is a sub-brand of LEOFA dedicated to providing premium sleep solutions for Indonesian families. Our mattresses, pillows, and bedding accessories are crafted with high-quality foam materials to deliver superior comfort and support for a restful night's sleep.",
+      "readMore": "Learn More",
+      "stats": {
+        "experience": {
+          "title": "10+ Years",
+          "description": "Expertise in premium sleep product manufacturing."
+        },
+        "products": {
+          "title": "30+ Products",
+          "description": "Complete range of mattresses, pillows, and bedding."
+        },
+        "customers": {
+          "title": "10,000+ Customers",
+          "description": "Indonesian families enjoying quality sleep."
+        },
+        "satisfaction": {
+          "title": "95% Satisfaction",
+          "description": "Customer satisfaction with our sleep products."
+        }
+      },
+      "features": {
+        "whyChoose": {
+          "title": "Why Choose Shinjiru?",
+          "description": "Premium foam materials designed for optimal comfort and support, meeting the sleep needs of Indonesian families."
+        },
+        "quality": {
+          "title": "High Quality Standards",
+          "description": "Every product meets strict quality standards to ensure long-lasting comfort and durability."
+        },
+        "comfort": {
+          "title": "Superior Comfort",
+          "description": "Engineered to provide the perfect balance of softness and support for restful sleep."
+        }
+      }
     }
   },
   "localIds": [

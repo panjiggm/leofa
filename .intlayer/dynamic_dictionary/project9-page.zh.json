@@ -23,6 +23,44 @@
         "detailing": "美容工具",
         "finishing": "修整泡沫"
       }
+    },
+    "about": {
+      "badge": "关于Project9",
+      "heading": "汽车护理的专业选择",
+      "description": "Project9是LEOFA旗下专为汽车行业和专业美容需求设计的子品牌。我们的产品提供精确性和耐用性，实现专业人士信赖的高效优质抛光效果。",
+      "readMore": "了解更多",
+      "stats": {
+        "experience": {
+          "title": "10+年",
+          "description": "汽车行业泡沫制造经验。"
+        },
+        "products": {
+          "title": "50+产品",
+          "description": "各种抛光垫和美容泡沫解决方案。"
+        },
+        "partners": {
+          "title": "200+合作伙伴",
+          "description": "深受印尼专业美容师信赖。"
+        },
+        "satisfaction": {
+          "title": "98%满意度",
+          "description": "专业用户客户满意率。"
+        }
+      },
+      "features": {
+        "whyChoose": {
+          "title": "为什么选择Project9？",
+          "description": "专为专业汽车护理中的精密抛光和持久耐用而设计的工业级泡沫材料。"
+        },
+        "quality": {
+          "title": "优质品质",
+          "description": "每款产品均经过严格质量控制，确保性能稳定、效果卓越。"
+        },
+        "support": {
+          "title": "专家支持",
+          "description": "我们的团队提供专业指导，帮助您获得最佳美容效果。"
+        }
+      }
     }
   },
   "localIds": [

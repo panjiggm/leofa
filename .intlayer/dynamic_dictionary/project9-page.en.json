@@ -23,6 +23,44 @@
         "detailing": "Detailing Tools",
         "finishing": "Finishing Foam"
       }
+    },
+    "about": {
+      "badge": "About Project9",
+      "heading": "The Professional Choice for Automotive Care",
+      "description": "Project9 is a sub-brand of LEOFA designed specifically for the automotive sector and professional detailing needs. Our products offer precision and durability to achieve efficient and optimal polishing results that professionals trust.",
+      "readMore": "Learn More",
+      "stats": {
+        "experience": {
+          "title": "10+ Years",
+          "description": "Experience in foam manufacturing for automotive industry."
+        },
+        "products": {
+          "title": "50+ Products",
+          "description": "Variety of polishing pads and detailing foam solutions."
+        },
+        "partners": {
+          "title": "200+ Partners",
+          "description": "Trusted by professional detailers across Indonesia."
+        },
+        "satisfaction": {
+          "title": "98% Satisfaction",
+          "description": "Customer satisfaction rate from professional users."
+        }
+      },
+      "features": {
+        "whyChoose": {
+          "title": "Why Choose Project9?",
+          "description": "Industrial-grade foam materials engineered for precision polishing and long-lasting durability in professional automotive care."
+        },
+        "quality": {
+          "title": "Premium Quality",
+          "description": "Each product undergoes rigorous quality control to ensure consistent performance and superior results."
+        },
+        "support": {
+          "title": "Expert Support",
+          "description": "Our team provides professional guidance to help you achieve the best detailing results."
+        }
+      }
     }
   },
   "localIds": [

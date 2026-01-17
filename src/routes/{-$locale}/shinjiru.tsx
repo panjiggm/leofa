@@ -1,6 +1,8 @@
-import HeroShinjiru from '@/components/shinjiru/hero'
 import { createFileRoute } from '@tanstack/react-router'
 import { getIntlayer } from 'intlayer'
+
+import HeroShinjiru from '@/components/shinjiru/hero'
+import AboutShinjiru from '@/components/shinjiru/about'
 
 export const Route = createFileRoute('/{-$locale}/shinjiru')({
   component: RouteComponent,
@@ -21,6 +23,7 @@ function RouteComponent() {
     <div className='overflow-x-hidden'>
       <main>
         <HeroShinjiru />
+        <AboutShinjiru />
       </main>
     </div>
   )

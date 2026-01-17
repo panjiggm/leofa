@@ -23,6 +23,44 @@
         "detailing": "Alat Detailing",
         "finishing": "Busa Finishing"
       }
+    },
+    "about": {
+      "badge": "Tentang Project9",
+      "heading": "Pilihan Profesional untuk Perawatan Otomotif",
+      "description": "Project9 adalah sub-brand dari LEOFA yang dirancang khusus untuk sektor otomotif dan kebutuhan detailing profesional. Produk kami menawarkan presisi dan ketahanan untuk mencapai hasil poles yang efisien dan optimal yang dipercaya para profesional.",
+      "readMore": "Pelajari Lebih Lanjut",
+      "stats": {
+        "experience": {
+          "title": "10+ Tahun",
+          "description": "Pengalaman dalam manufaktur busa untuk industri otomotif."
+        },
+        "products": {
+          "title": "50+ Produk",
+          "description": "Berbagai pad poles dan solusi busa detailing."
+        },
+        "partners": {
+          "title": "200+ Mitra",
+          "description": "Dipercaya oleh detailer profesional di seluruh Indonesia."
+        },
+        "satisfaction": {
+          "title": "98% Kepuasan",
+          "description": "Tingkat kepuasan pelanggan dari pengguna profesional."
+        }
+      },
+      "features": {
+        "whyChoose": {
+          "title": "Mengapa Memilih Project9?",
+          "description": "Bahan busa standar industri yang dirancang untuk poles presisi dan ketahanan jangka panjang dalam perawatan otomotif profesional."
+        },
+        "quality": {
+          "title": "Kualitas Premium",
+          "description": "Setiap produk menjalani kontrol kualitas ketat untuk memastikan kinerja konsisten dan hasil yang superior."
+        },
+        "support": {
+          "title": "Dukungan Ahli",
+          "description": "Tim kami menyediakan panduan profesional untuk membantu Anda mencapai hasil detailing terbaik."
+        }
+      }
     }
   },
   "localIds": [

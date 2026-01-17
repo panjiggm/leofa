@@ -115,6 +115,170 @@
             }
           }
         }
+      },
+      "about": {
+        "badge": {
+          "nodeType": "translation",
+          "translation": {
+            "en": "About Project9",
+            "id": "Tentang Project9",
+            "zh": "关于Project9"
+          }
+        },
+        "heading": {
+          "nodeType": "translation",
+          "translation": {
+            "en": "The Professional Choice for Automotive Care",
+            "id": "Pilihan Profesional untuk Perawatan Otomotif",
+            "zh": "汽车护理的专业选择"
+          }
+        },
+        "description": {
+          "nodeType": "translation",
+          "translation": {
+            "en": "Project9 is a sub-brand of LEOFA designed specifically for the automotive sector and professional detailing needs. Our products offer precision and durability to achieve efficient and optimal polishing results that professionals trust.",
+            "id": "Project9 adalah sub-brand dari LEOFA yang dirancang khusus untuk sektor otomotif dan kebutuhan detailing profesional. Produk kami menawarkan presisi dan ketahanan untuk mencapai hasil poles yang efisien dan optimal yang dipercaya para profesional.",
+            "zh": "Project9是LEOFA旗下专为汽车行业和专业美容需求设计的子品牌。我们的产品提供精确性和耐用性，实现专业人士信赖的高效优质抛光效果。"
+          }
+        },
+        "readMore": {
+          "nodeType": "translation",
+          "translation": {
+            "en": "Learn More",
+            "id": "Pelajari Lebih Lanjut",
+            "zh": "了解更多"
+          }
+        },
+        "stats": {
+          "experience": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "10+ Years",
+                "id": "10+ Tahun",
+                "zh": "10+年"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Experience in foam manufacturing for automotive industry.",
+                "id": "Pengalaman dalam manufaktur busa untuk industri otomotif.",
+                "zh": "汽车行业泡沫制造经验。"
+              }
+            }
+          },
+          "products": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "50+ Products",
+                "id": "50+ Produk",
+                "zh": "50+产品"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Variety of polishing pads and detailing foam solutions.",
+                "id": "Berbagai pad poles dan solusi busa detailing.",
+                "zh": "各种抛光垫和美容泡沫解决方案。"
+              }
+            }
+          },
+          "partners": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "200+ Partners",
+                "id": "200+ Mitra",
+                "zh": "200+合作伙伴"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Trusted by professional detailers across Indonesia.",
+                "id": "Dipercaya oleh detailer profesional di seluruh Indonesia.",
+                "zh": "深受印尼专业美容师信赖。"
+              }
+            }
+          },
+          "satisfaction": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "98% Satisfaction",
+                "id": "98% Kepuasan",
+                "zh": "98%满意度"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Customer satisfaction rate from professional users.",
+                "id": "Tingkat kepuasan pelanggan dari pengguna profesional.",
+                "zh": "专业用户客户满意率。"
+              }
+            }
+          }
+        },
+        "features": {
+          "whyChoose": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Why Choose Project9?",
+                "id": "Mengapa Memilih Project9?",
+                "zh": "为什么选择Project9？"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Industrial-grade foam materials engineered for precision polishing and long-lasting durability in professional automotive care.",
+                "id": "Bahan busa standar industri yang dirancang untuk poles presisi dan ketahanan jangka panjang dalam perawatan otomotif profesional.",
+                "zh": "专为专业汽车护理中的精密抛光和持久耐用而设计的工业级泡沫材料。"
+              }
+            }
+          },
+          "quality": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Premium Quality",
+                "id": "Kualitas Premium",
+                "zh": "优质品质"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Each product undergoes rigorous quality control to ensure consistent performance and superior results.",
+                "id": "Setiap produk menjalani kontrol kualitas ketat untuk memastikan kinerja konsisten dan hasil yang superior.",
+                "zh": "每款产品均经过严格质量控制，确保性能稳定、效果卓越。"
+              }
+            }
+          },
+          "support": {
+            "title": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Expert Support",
+                "id": "Dukungan Ahli",
+                "zh": "专家支持"
+              }
+            },
+            "description": {
+              "nodeType": "translation",
+              "translation": {
+                "en": "Our team provides professional guidance to help you achieve the best detailing results.",
+                "id": "Tim kami menyediakan panduan profesional untuk membantu Anda mencapai hasil detailing terbaik.",
+                "zh": "我们的团队提供专业指导，帮助您获得最佳美容效果。"
+              }
+            }
+          }
+        }
       }
     },
     "localId": "project9-page::local::src/contents/project9-page.content.ts",

@@ -23,6 +23,44 @@
         "pillow": "枕头",
         "bedding": "床上用品"
       }
+    },
+    "about": {
+      "badge": "关于Shinjiru",
+      "heading": "印尼家庭信赖的舒适感",
+      "description": "Shinjiru是LEOFA旗下致力于为印尼家庭提供优质睡眠解决方案的子品牌。我们的床垫、枕头和床上用品采用优质泡沫材料制作，为安稳的夜间睡眠提供卓越的舒适性和支撑力。",
+      "readMore": "了解更多",
+      "stats": {
+        "experience": {
+          "title": "10+年",
+          "description": "优质睡眠产品制造专业知识。"
+        },
+        "products": {
+          "title": "30+产品",
+          "description": "床垫、枕头和床上用品的完整系列。"
+        },
+        "customers": {
+          "title": "10,000+客户",
+          "description": "印尼家庭享受优质睡眠。"
+        },
+        "satisfaction": {
+          "title": "95%满意度",
+          "description": "客户对我们睡眠产品的满意度。"
+        }
+      },
+      "features": {
+        "whyChoose": {
+          "title": "为什么选择Shinjiru？",
+          "description": "专为最佳舒适度和支撑力设计的优质泡沫材料，满足印尼家庭的睡眠需求。"
+        },
+        "quality": {
+          "title": "高质量标准",
+          "description": "每款产品均符合严格的质量标准，确保持久的舒适性和耐用性。"
+        },
+        "comfort": {
+          "title": "卓越舒适",
+          "description": "精心设计，提供柔软度和支撑力的完美平衡，带来安稳的睡眠。"
+        }
+      }
     }
   },
   "localIds": [
