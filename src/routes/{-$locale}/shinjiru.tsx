@@ -8,7 +8,7 @@ export const Route = createFileRoute('/{-$locale}/shinjiru')({
   component: RouteComponent,
   head: ({ params }) => {
     const metaContent = getIntlayer('shinjiru-page', params.locale)
-    const siteUrl = import.meta.env.VITE_SITE_URL || 'https://leofa.co.id'
+    const siteUrl = import.meta.env.VITE_SITE_URL || 'https://leofa.vercel.app'
     const ogImageUrl = `${siteUrl}/og-image.webp`
 
     return {
@@ -19,6 +19,9 @@ export const Route = createFileRoute('/{-$locale}/shinjiru')({
         { property: 'og:title', content: metaContent.title },
         { property: 'og:description', content: metaContent.description },
         { property: 'og:image', content: ogImageUrl },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:type', content: 'image/webp' },
         { property: 'og:url', content: `${siteUrl}/${params.locale}/shinjiru` },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Shinjiru - Leofa Integritas Perkasa' },
