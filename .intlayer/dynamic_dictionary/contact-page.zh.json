@@ -1,0 +1,61 @@
+{
+  "key": "contact-page",
+  "content": {
+    "title": "联系我们 | LEOFA - 获取优质泡沫解决方案",
+    "description": "联系LEOFA获取高品质泡沫解决方案。我们的团队随时准备帮助您找到适合床垫、沙发、汽车美容和时尚行业需求的完美产品。",
+    "hero": {
+      "badge": "联系我们",
+      "heading": "让我们讨论您的泡沫解决方案",
+      "subheading": "无论您需要床垫、沙发、汽车美容还是时尚应用的泡沫，我们的团队都准备为您的行业需求提供定制解决方案。"
+    },
+    "companyInfo": {
+      "name": "PT. LEOFA INTEGRITAS PERKASA",
+      "tagline": "值得信赖的优质泡沫制造商",
+      "availability": "随时为您服务"
+    },
+    "form": {
+      "name": {
+        "label": "全名",
+        "placeholder": "输入您的全名..."
+      },
+      "email": {
+        "label": "电子邮件地址",
+        "placeholder": "输入您的电子邮件地址..."
+      },
+      "company": {
+        "label": "公司名称（可选）",
+        "placeholder": "输入您的公司名称..."
+      },
+      "phone": {
+        "label": "电话号码",
+        "placeholder": "输入您的电话号码..."
+      },
+      "message": {
+        "label": "您的留言",
+        "placeholder": "告诉我们您的泡沫需求、所需数量或任何问题..."
+      },
+      "industries": {
+        "label": "行业/应用",
+        "options": {
+          "mattress": "床垫制造",
+          "sofa": "沙发和家具",
+          "automotive": "汽车美容",
+          "fashion": "时尚和服装"
+        }
+      },
+      "submit": "发送消息"
+    },
+    "partners": {
+      "title": "受到行业领导者的信赖"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "localIds": [
+    "contact-page::local::src/contents/contact-page.content.ts"
+  ],
+  "locale": "zh"
+}

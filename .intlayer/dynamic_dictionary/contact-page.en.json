@@ -1,0 +1,61 @@
+{
+  "key": "contact-page",
+  "content": {
+    "title": "Contact Us | LEOFA - Get in Touch for Premium Foam Solutions",
+    "description": "Contact LEOFA for high-quality foam solutions. Our team is ready to help you find the perfect products for your mattress, sofa, automotive detailing, and fashion industry needs.",
+    "hero": {
+      "badge": "Get in Touch",
+      "heading": "Let's Discuss Your Foam Solutions",
+      "subheading": "Whether you need foam for mattresses, sofas, automotive detailing, or fashion applications, our team is ready to provide customized solutions for your industry needs."
+    },
+    "companyInfo": {
+      "name": "PT. LEOFA INTEGRITAS PERKASA",
+      "tagline": "Trusted Quality Foam Manufacturer",
+      "availability": "Ready to Serve You"
+    },
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Enter your full name..."
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address..."
+      },
+      "company": {
+        "label": "Company Name (Optional)",
+        "placeholder": "Enter your company name..."
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number..."
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Tell us about your foam requirements, quantity needed, or any questions..."
+      },
+      "industries": {
+        "label": "Industry / Application",
+        "options": {
+          "mattress": "Mattress Manufacturing",
+          "sofa": "Sofa & Furniture",
+          "automotive": "Automotive Detailing",
+          "fashion": "Fashion & Apparel"
+        }
+      },
+      "submit": "Send Message"
+    },
+    "partners": {
+      "title": "Trusted by Industry Leaders"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "localIds": [
+    "contact-page::local::src/contents/contact-page.content.ts"
+  ],
+  "locale": "en"
+}

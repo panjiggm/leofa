@@ -1,0 +1,61 @@
+{
+  "key": "contact-page",
+  "content": {
+    "title": "Hubungi Kami | LEOFA - Konsultasi Solusi Busa Berkualitas Premium",
+    "description": "Hubungi LEOFA untuk solusi busa berkualitas tinggi. Tim kami siap membantu Anda menemukan produk yang sempurna untuk kebutuhan industri kasur, sofa, detailing automotif, dan fashion.",
+    "hero": {
+      "badge": "Hubungi Kami",
+      "heading": "Mari Diskusikan Solusi Busa Anda",
+      "subheading": "Apakah Anda membutuhkan busa untuk kasur, sofa, detailing automotif, atau aplikasi fashion, tim kami siap memberikan solusi khusus untuk kebutuhan industri Anda."
+    },
+    "companyInfo": {
+      "name": "PT. LEOFA INTEGRITAS PERKASA",
+      "tagline": "Produsen Busa Berkualitas Terpercaya",
+      "availability": "Siap Melayani Anda"
+    },
+    "form": {
+      "name": {
+        "label": "Nama Lengkap",
+        "placeholder": "Masukkan nama lengkap Anda..."
+      },
+      "email": {
+        "label": "Alamat Email",
+        "placeholder": "Masukkan alamat email Anda..."
+      },
+      "company": {
+        "label": "Nama Perusahaan (Opsional)",
+        "placeholder": "Masukkan nama perusahaan Anda..."
+      },
+      "phone": {
+        "label": "Nomor Telepon",
+        "placeholder": "Masukkan nomor telepon Anda..."
+      },
+      "message": {
+        "label": "Pesan Anda",
+        "placeholder": "Ceritakan tentang kebutuhan busa Anda, jumlah yang dibutuhkan, atau pertanyaan lainnya..."
+      },
+      "industries": {
+        "label": "Industri / Aplikasi",
+        "options": {
+          "mattress": "Manufaktur Kasur",
+          "sofa": "Sofa & Furniture",
+          "automotive": "Detailing Automotif",
+          "fashion": "Fashion & Apparel"
+        }
+      },
+      "submit": "Kirim Pesan"
+    },
+    "partners": {
+      "title": "Dipercaya oleh Pemimpin Industri"
+    },
+    "social": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  },
+  "localIds": [
+    "contact-page::local::src/contents/contact-page.content.ts"
+  ],
+  "locale": "id"
+}

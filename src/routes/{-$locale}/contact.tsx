@@ -1,3 +1,4 @@
+import ContactDetail from '@/components/contact-us/contact-detail'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/{-$locale}/contact')({
@@ -5,5 +6,11 @@ export const Route = createFileRoute('/{-$locale}/contact')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/contact"!</div>
+  return (
+    <div className='overflow-x-hidden'>
+      <main>
+        <ContactDetail />
+      </main>
+    </div>
+  )
 }
