@@ -58,7 +58,7 @@ const ContactDetail = () => {
   const content = getIntlayer("contact-page", locale);
   
   return (
-    <section className='py-8 sm:py-16 lg:py-24'>
+    <section className='py-40'>
       <div className='mx-auto max-w-6xl space-y-9 px-4 sm:px-6 lg:px-8'>
         {/* Header Section */}
         <div className='space-y-2.5'>
