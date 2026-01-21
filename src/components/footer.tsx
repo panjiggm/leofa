@@ -9,9 +9,9 @@ import tiktokIcon from '@/assets/social/tiktok.svg'
 import { Link, LinkComponentProps } from '@tanstack/react-router';
 
 const socialLinks = [
-  { name: 'Facebook', icon: facebookIcon, href: '#' },
-  { name: 'Instagram', icon: instagramIcon, href: '#' },
-  { name: 'TikTok', icon: tiktokIcon, href: '#' },
+  { name: 'Facebook', icon: facebookIcon, href: 'https://facebook.com/profile.php?id=61576288782392' },
+  { name: 'Instagram', icon: instagramIcon, href: 'https://instagram.com/project9.official/' },
+  { name: 'TikTok', icon: tiktokIcon, href: 'https://tiktok.com/@project9.official' },
 ]
 
 const getLocaleFromUrl = (pathname: string, params: any): string => {
