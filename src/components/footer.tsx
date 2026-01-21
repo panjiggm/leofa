@@ -3,7 +3,16 @@ import { useLocation, useParams } from '@tanstack/react-router'
 import { getIntlayer } from 'intlayer'
 
 import logoLeofaWhite from '@/assets/images/logo-leofa-white.png'
+import facebookIcon from '@/assets/social/facebook.svg'
+import instagramIcon from '@/assets/social/instagram.svg'
+import tiktokIcon from '@/assets/social/tiktok.svg'
 import { Link, LinkComponentProps } from '@tanstack/react-router';
+
+const socialLinks = [
+  { name: 'Facebook', icon: facebookIcon, href: '#' },
+  { name: 'Instagram', icon: instagramIcon, href: '#' },
+  { name: 'TikTok', icon: tiktokIcon, href: '#' },
+]
 
 const getLocaleFromUrl = (pathname: string, params: any): string => {
   const validLocales = ['en', 'id', 'zh'];
@@ -70,6 +79,26 @@ const Footer = () => {
                     Jl. Rimpak Wetan, Kel. Sindangasih, Kec. Sindang Jaya, Kab. Tangerang, Provinsi Banten
                   </p>
                 </div>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className='flex items-center gap-4'>
+                {socialLinks.map((social) => (
+                  <a 
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className='group flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-all duration-300'
+                    aria-label={social.name}
+                  >
+                    <img 
+                      src={social.icon} 
+                      alt={social.name} 
+                      className='w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity duration-300'
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
