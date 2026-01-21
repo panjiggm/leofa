@@ -136,7 +136,7 @@ const AboutProject9 = () => {
             >
               <Button asChild size='lg' className='group rounded-lg text-base has-[>svg]:px-6'>
                 <a href='#'>
-                  {content.about.readMore}
+                  {content.hero.buttons.contactUs}
                   <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
                 </a>
               </Button>
@@ -151,7 +151,7 @@ const AboutProject9 = () => {
             transition={{ duration: 0.7 }}
           >
             <img
-              src='https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-8.png'
+              src='https://ik.imagekit.io/hiddenjems/Leofa/Mix%20Products/IMG_0121.HEIC?updatedAt=1768187133226'
               alt='About Project9'
               className='h-full max-h-175 w-full rounded-md object-cover'
             />

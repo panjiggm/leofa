@@ -10,7 +10,7 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 import { cn } from '@/lib/utils'
 import { MotionPreset } from '@/components/ui/motion-preset'
 import { getIntlayer } from 'intlayer'
-import { useLocation, useParams } from '@tanstack/react-router'
+import { Link, useLocation, useParams } from '@tanstack/react-router'
 
 const getLocaleFromUrl = (pathname: string, params: any): string => {
   const validLocales = ['en', 'id', 'zh'];
@@ -53,15 +53,15 @@ const HeroProject9 = () => {
 
   const images = [
     {
-      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-27.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Foam%20Pad/Foam%20Pad/IMG_0064.HEIC?updatedAt=1768187619200',
       title: content.carousel.images.polishing
     },
     {
-      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-28.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Foam%20Pad/Foam%20Pad/IMG_0064.HEIC?updatedAt=1768187619200',
       title: content.carousel.images.detailing
     },
     {
-      img: 'https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/about-us/image-29.png',
+      img: 'https://ik.imagekit.io/hiddenjems/Leofa/Compounds/Compound/IMG_0038.HEIC?updatedAt=1768187453423',
       title: content.carousel.images.finishing
     }
   ]
@@ -115,13 +115,10 @@ const HeroProject9 = () => {
             className='flex justify-center gap-4'
           >
             <Button size='lg' className='group rounded-lg text-base has-[>svg]:px-6' asChild>
-              <a href='#'>
+              <Link to='/{-$locale}/contact'>
                 {content.hero.buttons.contactUs}
                 <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
-              </a>
-            </Button>
-            <Button size='lg' variant='outline' className='group rounded-lg text-base shadow-none' asChild>
-              <a href='#'>{content.hero.buttons.viewProducts}</a>
+              </Link>
             </Button>
           </MotionPreset>
         </div>
