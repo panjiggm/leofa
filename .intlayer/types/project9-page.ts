@@ -35,12 +35,12 @@ export default {
           "readMore": "Learn More",
           "stats": {
             "experience": {
-              "title": "10+ Years",
+              "title": "5+ Years",
               "description": "Experience in foam manufacturing for automotive industry."
             },
             "products": {
-              "title": "50+ Products",
-              "description": "Variety of polishing pads and detailing foam solutions."
+              "title": "25++ Products",
+              "description": "Variety of polishing foam pad, Wool pad, and Cutting Compound Solutions."
             },
             "partners": {
               "title": "200+ Partners",
@@ -98,12 +98,12 @@ export default {
           "readMore": "Pelajari Lebih Lanjut",
           "stats": {
             "experience": {
-              "title": "10+ Tahun",
+              "title": "5+ Tahun",
               "description": "Pengalaman dalam manufaktur busa untuk industri otomotif."
             },
             "products": {
-              "title": "50+ Produk",
-              "description": "Berbagai pad poles dan solusi busa detailing."
+              "title": "25++ Produk",
+              "description": "Berbagai busa poles, pad wol, dan solusi compound potong."
             },
             "partners": {
               "title": "200+ Mitra",
@@ -161,12 +161,12 @@ export default {
           "readMore": "了解更多",
           "stats": {
             "experience": {
-              "title": "10+年",
+              "title": "5+年",
               "description": "汽车行业泡沫制造经验。"
             },
             "products": {
-              "title": "50+产品",
-              "description": "各种抛光垫和美容泡沫解决方案。"
+              "title": "25++产品",
+              "description": "各种抛光泡沫垫、羊毛垫和切割复合液解决方案。"
             },
             "partners": {
               "title": "200+合作伙伴",

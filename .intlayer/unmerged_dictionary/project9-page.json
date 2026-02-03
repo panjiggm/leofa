@@ -154,9 +154,9 @@
             "title": {
               "nodeType": "translation",
               "translation": {
-                "en": "10+ Years",
-                "id": "10+ Tahun",
-                "zh": "10+年"
+                "en": "5+ Years",
+                "id": "5+ Tahun",
+                "zh": "5+年"
               }
             },
             "description": {
@@ -172,17 +172,17 @@
             "title": {
               "nodeType": "translation",
               "translation": {
-                "en": "50+ Products",
-                "id": "50+ Produk",
-                "zh": "50+产品"
+                "en": "25++ Products",
+                "id": "25++ Produk",
+                "zh": "25++产品"
               }
             },
             "description": {
               "nodeType": "translation",
               "translation": {
-                "en": "Variety of polishing pads and detailing foam solutions.",
-                "id": "Berbagai pad poles dan solusi busa detailing.",
-                "zh": "各种抛光垫和美容泡沫解决方案。"
+                "en": "Variety of polishing foam pad, Wool pad, and Cutting Compound Solutions.",
+                "id": "Berbagai busa poles, pad wol, dan solusi compound potong.",
+                "zh": "各种抛光泡沫垫、羊毛垫和切割复合液解决方案。"
               }
             }
           },

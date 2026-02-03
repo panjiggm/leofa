@@ -1,17 +1,19 @@
-import { Phone, Mail, MapPin } from 'lucide-react'
 import { useLocation, useParams } from '@tanstack/react-router'
 import { getIntlayer } from 'intlayer'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 import logoLeofaWhite from '@/assets/images/logo-leofa-white.png'
 import facebookIcon from '@/assets/social/facebook.svg'
 import instagramIcon from '@/assets/social/instagram.svg'
+import shopeeIcon from '@/assets/social/shopee.png'
 import tiktokIcon from '@/assets/social/tiktok.svg'
-import { Link, LinkComponentProps } from '@tanstack/react-router';
+import { Link, LinkComponentProps } from '@tanstack/react-router'
 
 const socialLinks = [
   { name: 'Facebook', icon: facebookIcon, href: 'https://facebook.com/profile.php?id=61576288782392' },
   { name: 'Instagram', icon: instagramIcon, href: 'https://instagram.com/project9.official/' },
   { name: 'TikTok', icon: tiktokIcon, href: 'https://tiktok.com/@project9.official' },
+  { name: 'Shopee', icon: shopeeIcon, href: 'https://s.shopee.co.id/AUo9cZUS7i' },
 ]
 
 const getLocaleFromUrl = (pathname: string, params: any): string => {
