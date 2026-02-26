@@ -2,13 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { getIntlayer } from "intlayer";
 
 // Components
-import HeroSection from "@/components/hero";
 import AboutUs from "@/components/about-us";
-import MainProducts from "@/components/main-products";
 import CTA from "@/components/cta";
 import FAQ from "@/components/faq";
-import Testimonials from "@/components/testimonials";
+import HeroSection from "@/components/hero";
 import HotProducts from "@/components/hot-products";
+import MainProducts from "@/components/main-products";
+import ProductGallery from '@/components/product-gallery';
+import Testimonials from "@/components/testimonials";
 
 export const Route = createFileRoute("/{-$locale}/")({
   component: App,
@@ -48,6 +49,7 @@ return (
     <main>
       <HeroSection />
       <AboutUs />
+      <ProductGallery />
       <MainProducts />
       <HotProducts />
       <CTA />
